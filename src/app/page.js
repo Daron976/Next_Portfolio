@@ -1,95 +1,104 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+import styles from "./page.module.css";
+import { useEffect, useState } from "react";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { HiOutlineHome } from "react-icons/hi";
+import { SiAboutdotme } from "react-icons/si";
+import { MdOutlineCases } from "react-icons/md";
+import { GrContactInfo } from "react-icons/gr";
+import { IconContext } from "react-icons";
+import Link from "next/link";
+import Image from "next/image";
+import logo from "../../public/logo_images/logo.png";
+import "./globals.css";
 
 export default function Home() {
+  const [animation, setAnimation] = useState(true);
+  const [clicked, setClicked] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (animation) {
+        setAnimation(false);
+      }
+    }, 2000);
+  }, [animation]);
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <header>
+        <nav className="desktop-header">
+          <div>
+            <Image src={logo} width={165} height={150} alt="logo" />
+          </div>
+          <div className="flex menu-container transition">
+            <div
+              className="menu-btn-container"
+              onClick={() => {
+                if (!clicked) {
+                  setClicked(true);
+                } else setClicked(false);
+              }}
+            >
+              <IconContext.Provider
+                value={{ size: "2em", className: "menu-open-btn transition" }}
+              >
+                <HiMenuAlt3 />
+              </IconContext.Provider>
+            </div>
+            <ul
+              className={
+                clicked
+                  ? "desktop-menu flex transition"
+                  : "desktop-menu display-none transition"
+              }
+            >
+              <li>
+                <Link href="/">
+                  <HiOutlineHome />
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <SiAboutdotme />
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <MdOutlineCases />
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <GrContactInfo />
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main className={`${styles.content} ${styles.flex}`} data-testid="home">
+        <div className="home-header">
+          <h1
+          // className={
+          //   animation ? `${styles.animation} ${styles.name}` : `${styles.name}`
+          // }
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Daron Wiafe
+          </h1>
+          <p
+          // className={
+          //   animation
+          //     ? `${styles.animation} ${styles.subtext}`
+          //     : `${styles.subtext}`
+          // }
+          >
+            Software developer
           </p>
-        </a>
-      </div>
-    </main>
-  )
+          <p className={styles.msg}>
+            Developing more than just your technical products
+          </p>
+        </div>
+      </main>
+    </>
+  );
 }
