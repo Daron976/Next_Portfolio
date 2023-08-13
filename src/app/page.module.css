@@ -6,7 +6,7 @@
 
 .content {
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.644), rgba(255, 255, 255, 0.76)),
+    linear-gradient(135deg, #d3e9e9ad, #C4DFDFc2),
     url(../../public/background_images/bckgrnd.jpg);
   background-size: cover;
   width: 100%;
@@ -22,14 +22,150 @@
 }
 
 .subtext {
+  display: block;
   font-size: 2.5rem;
 }
 
 .msg {
   margin-top: 5rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
-.animation {
-  animation: subtext-entrance 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}   
+.name_animation {
+  animation: name-entrance 2s linear both;
+}
+
+.subtext_animation {
+  animation: subtext-entrance 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+}
+
+/* animation keyframes */
+
+@keyframes menu-in {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes menu-out {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes name-entrance {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  10.1% {
+    opacity: 1;
+  }
+  10.2% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  20.1% {
+    opacity: 1;
+  }
+  20.6% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  30.1% {
+    opacity: 1;
+  }
+  30.5% {
+    opacity: 1;
+  }
+  30.6% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  45.1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  55.1% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0;
+  }
+  57.1% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.1% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  65.1% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  75.1% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 0;
+  }
+  77.1% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  85.1% {
+    opacity: 0;
+  }
+  86% {
+    opacity: 0;
+  }
+  86.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes subtext-entrance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
