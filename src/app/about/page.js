@@ -1,122 +1,178 @@
 "use client";
-import styles from "../page.module.css";
+import styles from "./about.module.css";
 import { useEffect, useState } from "react";
-import { HiMenuAlt2 } from "react-icons/hi";
-import { HiMenuAlt3 } from "react-icons/hi";
-import { HiOutlineHome } from "react-icons/hi";
-import { SiAboutdotme } from "react-icons/si";
-import { MdOutlineCases } from "react-icons/md";
-import { GrContactInfo } from "react-icons/gr";
-import { IconContext } from "react-icons";
-import Link from "next/link";
-import Image from "next/image";
-import logo from "../../../public/logo_images/logo.png";
 import "../globals.css";
+import Link from "next/link";
 
 export default function Home() {
-  const [animation, setAnimation] = useState(true);
-  const [clicked, setClicked] = useState(false);
+  const [aboutMe, setAboutMe] = useState(true);
+  const [exp, setExp] = useState(false);
+  const [skill, setSkill] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      if (animation) {
-        setAnimation(false);
-      }
-    }, 2000);
-  }, [animation]);
-
-  const navItems = [
-    {
-      id: 0,
-      icon: <HiOutlineHome />,
-    },
-    {
-      id: 1,
-      icon: <SiAboutdotme />,
-    },
-    {
-      id: 2,
-      icon: <MdOutlineCases />,
-    },
-    {
-      id: 3,
-      icon: <GrContactInfo />,
-    },
-  ];
   return (
     <>
-      <header>
-        <nav className="desktop-header">
-          <div>
-            <Image src={logo} width={165} height={150} alt="logo" />
-          </div>
-          <div className="flex menu-container transition">
-            <div
-              className={
-                clicked
-                ? "menu-btn-container trigger-in"
-                : "menu-btn-container trigger-out"
-              }
+      <main className="content flex" data-testid="home">
+        <section
+          id="about"
+          className={`${styles.content} flex`}
+          data-testid="about"
+        >
+          <ul className={`${styles.header} flicker flex`}>
+            <li
+              className={aboutMe ? styles.underline : styles.aboutNavItems}
               onClick={() => {
-                if (!clicked) {
-                  setClicked(true);
-                } else setClicked(false);
+                if (!aboutMe) {
+                  setAboutMe(true);
+                  setExp(false);
+                  setSkill(false);
+                }
               }}
             >
-              <IconContext.Provider
-                value={{ size: "2.5em", className: "menu-open-btn transition" }}
-              >
-                {
-                  clicked
-                  ? <HiMenuAlt2 />
-                  : <HiMenuAlt3 />
+              <strong>Who am I</strong>
+            </li>
+            <li
+              className={exp ? styles.underline : styles.aboutNavItems}
+              onClick={() => {
+                if (!exp) {
+                  setAboutMe(false);
+                  setExp(true);
+                  setSkill(false);
                 }
-              </IconContext.Provider>
-            </div>
-            <ul
-              className={
-                clicked
-                  ? "desktop-menu flex transition open"
-                  : "desktop-menu display-none transition close"
-              }
+              }}
             >
-              {navItems.map((item) => (
-                <li key={item.id}>
-                  <Link href="/">
-                    <IconContext.Provider value={{ size: "2em" }}>
-                      {item.icon}
-                    </IconContext.Provider>
-                  </Link>
-                </li>
-              ))}
+              <strong>Experience</strong>
+            </li>
+            <li
+              className={skill ? styles.underline : styles.aboutNavItems}
+              onClick={() => {
+                if (!skill) {
+                  setAboutMe(false);
+                  setExp(false);
+                  setSkill(true);
+                }
+              }}
+            >
+              <strong>Skills</strong>
+            </li>
+          </ul>
+          <div
+            className={
+              aboutMe ? `${styles.contentContainer} flex` : "display-none"
+            }
+          >
+            <p className={`${styles.textContent} glass slide-in`}>
+              Hello there,
+              <br />
+              Have you ever looked at something and thought{" "}
+              <em>"I wonder how that was built"</em> or{" "}
+              <em>"I wonder how that works"</em>. Well, that's me. Curiosity
+              killed a cat, but thankfully I'm still alive, also I'm not a cat.
+              I am a Software developer and an automobile enthusiast who loves
+              to solve problems. Allow me to solve yours ;&#41;.
+              <br />
+              Life is not certain, but when you are in teh trenches, best
+              believe you will find me there with you
+              <br />
+              <Link href="/contact">
+                <strong>
+                  <em>Don't hesitate to reach out.</em>
+                </strong>
+              </Link>
+            </p>
+          </div>
+          <div
+            className={exp ? `${styles.contentContainer} flex` : "display-none"}
+          >
+            {/* <h1 className="flicker">Experience</h1> */}
+            <div className={`${styles.experienceContainer} flex`}>
+              <div className={styles.experienceItems}>
+                <article className={`${styles.list} glass flex slide-in`}>
+                  <h3>
+                    Frontend developer / QA · Tweak <br />
+                    <em>May 2023 — Aug 2023</em>
+                  </h3>
+                  <li className={styles.listItem}>
+                    - Built, tested and maintained aspects of company software.
+                    <br /> - Create interactive tours and videos to help
+                    customers.
+                    <br /> - Troubleshot web application issues, wrote,
+                    maintained, and documented automated tests.
+                  </li>
+                </article>
+                <article className={`${styles.list} glass flex slide-in-ni`}>
+                  <h3>
+                    Software developer · Microverse
+                    <br />
+                    <em>Aug 2022 — April 2023</em>
+                  </h3>
+                  <li className={styles.listItem}>
+                    - Built, tested, and deployed maintainable, responsive web
+                    applications. with scrum methodologies.
+                    <br />
+                    -Troubleshot web application issues, and documented APIs
+                    with unit tests. <br />- Never missed project deadlines in
+                    over a 2000 hours in pair-programming and remote development
+                  </li>
+                </article>
+                <article className={`${styles.list} glass flex slide-in-san`}>
+                  <h3>
+                    Student Mentor · Microverse
+                    <br />
+                    <em>Sep 2023 — Oct 2023</em>
+                  </h3>
+                  <p className={styles.listItem}>
+                    - Mentored junior web developers, providing technical
+                    support and improvements to code code quality and overall
+                    performance.
+                    <br />- Provided advice and tips on maintaining motivation
+                    to preserve longevity in the program.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div
+            className={
+              skill ? `${styles.contentContainer} flex` : "display-none"
+            }
+          >
+            {/* <h1 className="flicker">Skills</h1> */}
+            <ul className={`${styles.list} ${styles.skillsUl} flex`}>
+              <li className={`${styles.skillListItem} glass slide-in`}>
+                <h3 className="skill-header">Tech-Stack</h3>
+                <div className={styles.skill}>Ruby</div>
+                <div className={styles.skill}>Rails</div>
+                <div className={styles.skill}>React & Redux</div>
+                <div className={styles.skill}>JavaScript</div>
+                <div className={styles.skill}>TypeScript</div>
+                <div className={styles.skill}>CSS</div>
+                <div className={styles.skill}>HTML5</div>
+              </li>
+              <li className={`${styles.skillListItem} glass slide-in-ni`}>
+                <h3 className="skill-header">Tools & Methods</h3>
+                <div className={styles.skill}>Git, Git-flow</div>
+                <div className={styles.skill}>GitHub & GitHub-flow</div>
+                <div className={styles.skill}>
+                  Mobile/Responsive Development
+                </div>
+                <div className={styles.skill}>Ghost Inspector</div>
+                <div className={styles.skill}>Jest Testing</div>
+                <div className={styles.skill}>Dev Tools</div>
+              </li>
+              <li className={`${styles.skillListItem} glass slide-in-san`}>
+                <h3 className="skill-header">Professional</h3>
+                <div className={styles.skill}>Remote Pair-Programming</div>
+                <div className={styles.skill}>Teamwork</div>
+                <div className={styles.skill}>Mentorship</div>
+                <div className={styles.skill}>Communication</div>
+                <div className={styles.skill}>Effective Collaboration</div>
+                <div className={styles.skill}>Adaptability</div>
+                <div className={styles.skill}>Volunteering</div>
+                <div className={styles.skill}>Leadership</div>
+              </li>
             </ul>
           </div>
-        </nav>
-      </header>
-      <main className={`${styles.content} ${styles.flex}`} data-testid="home">
-        <div className="home-header">
-          <h1
-            className={
-              animation
-                ? `${styles.name_animation} ${styles.name}`
-                : `${styles.name}`
-            }
-          >
-            about page
-          </h1>
-          <p
-            className={
-              animation
-                ? `${styles.subtext_animation} ${styles.subtext}`
-                : `${styles.subtext}`
-            }
-          >
-            This is the about page desdcription
-          </p>
-          <p className={styles.msg}>
-            Developing more than just your technical products
-          </p>
-        </div>
+        </section>
       </main>
     </>
   );

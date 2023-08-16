@@ -10,7 +10,8 @@ html {
 }
 
 body {
-  height: 100%;
+  background: linear-gradient(135deg, #256666cc, #45b6f8b3),
+    url(../../public/background_images/floatingtop.jpg);
   background-size: cover;
 }
 
@@ -42,6 +43,24 @@ li {
   transition-duration: 2s;
 }
 
+.display-none {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.content {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  z-index: 2;
+}
+
 /* desktop nav */
 
 .desktop-header,
@@ -53,23 +72,15 @@ li {
   /* background-color: white; */
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5rem 1rem 1rem;
+  padding: 1rem;
   /* box-shadow: 2px -2px 5px 0 black; */
   z-index: 2;
 }
 
-.social-links {
-  bottom: 0;
-  padding: 1rem 5rem 1rem 2.5rem;
-}
-
-.social-links ul {
-  gap: 1rem;
-}
-
 .desktop-menu,
 .menu-open-btn,
-.social-icon {
+.social-icon,
+.glass {
   gap: 3rem;
   /* border: 1px solid black; */
   padding: 0.25rem 0.5rem;
@@ -80,35 +91,23 @@ li {
   border: 1px solid rgb(255 255 255 / 0%);
 }
 
-.social-icon {
-  gap: 0;
-  /* padding: 0.2rem; */
-  border-radius: 10px;
-}
-
-/* .footer-text {
-  font-size: 1rem;
-} */
-
 .menu-open-btn {
   gap: 0;
   padding: 0.1rem;
-}
-
-.menu-btn-container {
-  transition: 0.5s;
 }
 
 .menu-btn-container:hover {
   cursor: pointer;
 }
 
-.display-none {
-  display: none;
+.nav-icon {
+  transition: all;
+  transition-duration: 0.5s;
 }
 
-.hidden {
-  visibility: hidden;
+.nav-icon:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  transform: translateY(-5px);
 }
 
 .menu-container {
@@ -116,8 +115,36 @@ li {
   align-items: center;
 }
 
-.open {
-  animation: menu-in 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+/* footer */
+
+.social-links {
+  bottom: 0;
+  /* padding: 1rem 5rem 1rem 2.5rem; */
+  align-items: flex-end;
+}
+
+.social-links ul {
+  gap: 1rem;
+}
+
+.social-icon {
+  gap: 0;
+  /* padding: 0.2rem; */
+  border-radius: 10px;
+}
+
+/* animations */
+
+.slide-in {
+  animation: slide-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-ni {
+  animation: slide-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+
+.slide-in-san {
+  animation: slide-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
 }
 
 .trigger-in {
@@ -128,15 +155,27 @@ li {
   animation: trigger-out 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.close {
-  animation: menu-out 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.slide-out {
+  animation: slide-out 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.appear {
+  animation: appear 3s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+}
+
+.appearText {
+  animation: appear 3s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
+}
+
+.flicker {
+  animation: flicker 2s linear both;
 }
 
 /* animation keyframes */
 
-@keyframes menu-in {
+@keyframes slide-in {
   0% {
-    transform: translateX(1000px);
+    transform: translateX(150px);
     opacity: 0;
   }
 
@@ -158,7 +197,7 @@ li {
   }
 }
 
-@keyframes menu-out {
+@keyframes slide-out {
   0% {
     transform: translateX(0);
     opacity: 1;
@@ -194,7 +233,7 @@ li {
   }
 }
 
-@keyframes name-entrance {
+/* @keyframes name-entrance {
   0% {
     transform: translateX(-1000px);
     opacity: 0;
@@ -204,7 +243,7 @@ li {
     transform: translateX(0);
     opacity: 1;
   }
-}
+} */
 
 @keyframes subtext-entrance {
   0% {
@@ -214,6 +253,111 @@ li {
 
   100% {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  10.1% {
+    opacity: 1;
+  }
+  10.2% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  20.1% {
+    opacity: 1;
+  }
+  20.6% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  30.1% {
+    opacity: 1;
+  }
+  30.5% {
+    opacity: 1;
+  }
+  30.6% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  45.1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  55.1% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0;
+  }
+  57.1% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.1% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  65.1% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  75.1% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 0;
+  }
+  77.1% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  85.1% {
+    opacity: 0;
+  }
+  86% {
+    opacity: 0;
+  }
+  86.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
