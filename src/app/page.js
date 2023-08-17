@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className={`flicker ${styles.name}`}>Daron Wiafe</h1>
           <p className={`appear ${styles.subtext}`}>Software developer</p>
           <p className={`appearText ${styles.msg}`}>
-            Developing more than just your technical products
+            Developing more than just software
           </p>
         </div>
       </main>

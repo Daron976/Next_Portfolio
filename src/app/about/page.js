@@ -70,7 +70,7 @@ export default function Home() {
               I am a Software developer and an automobile enthusiast who loves
               to solve problems. Allow me to solve yours ;&#41;.
               <br />
-              Life is not certain, but when you are in teh trenches, best
+              Life is not certain, but when you are in the trenches, best
               believe you will find me there with you
               <br />
               <Link href="/contact">
