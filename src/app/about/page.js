@@ -19,7 +19,9 @@ export default function Home() {
         >
           <ul className={`${styles.header} flicker flex`}>
             <li
-              className={aboutMe ? styles.underline : styles.aboutNavItems}
+              className={
+                aboutMe ? `${styles.underline} rightLine` : styles.aboutNavItems
+              }
               onClick={() => {
                 if (!aboutMe) {
                   setAboutMe(true);
@@ -31,7 +33,9 @@ export default function Home() {
               <strong>Who am I</strong>
             </li>
             <li
-              className={exp ? styles.underline : styles.aboutNavItems}
+              className={
+                exp ? `${styles.underline} rightLine` : styles.aboutNavItems
+              }
               onClick={() => {
                 if (!exp) {
                   setAboutMe(false);
@@ -43,7 +47,9 @@ export default function Home() {
               <strong>Experience</strong>
             </li>
             <li
-              className={skill ? styles.underline : styles.aboutNavItems}
+              className={
+                skill ? `${styles.underline} rightLine` : styles.aboutNavItems
+              }
               onClick={() => {
                 if (!skill) {
                   setAboutMe(false);

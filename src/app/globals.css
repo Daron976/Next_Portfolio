@@ -63,6 +63,12 @@ li {
   z-index: 2;
 }
 
+.rightLine {
+  border-right: 2.5px solid #1c6ead;
+  text-decoration: underline #1c6ead;
+  filter: drop-shadow(2px 4px 6px #1c6ead);
+}
+
 /* desktop nav */
 
 .desktop-header,
@@ -206,7 +212,7 @@ li {
   }
 
   100% {
-    transform: translateX(1000px);
+    transform: translateX(150px);
     opacity: 0;
   }
 }

@@ -1,29 +1,62 @@
+.projectContent {
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.proHeaders {
+  flex-direction: column;
+  /* position: absolute; */
+  /* width: 900px; */
+  display: inherit;
+  font-size: 1.4rem;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.header {
+  transition: all;
+  transition-duration: 0.5s;
+  padding-right: 2rem;
+}
+
+.header:hover {
+  cursor: pointer;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; */
+  text-decoration: underline;
+  filter: drop-shadow(2px 4px 6px #1c6ead);
+}
+
 .projectArticle,
 .header-addition {
+  /* margin: 5rem 0; */
   background-size: cover;
   background-position: center;
-  display: flex;
+  /* display: flex; */
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
   transition: all;
   transition-duration: 1s;
+  max-width: 66.25rem;
+  overflow: visible;
+  transition: all;
+  transition-duration: 1s;
+  text-align: left;
+  /* height: 500px; */
 }
 
-.projectDetailsContainer {
+.projectDetails {
+  gap: 0.5rem;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   height: 100%;
 }
 
 .projectDetails h1 {
   text-align: left;
   font-size: 2rem;
-}
-
-.projectDetails {
-  gap: 2rem;
-  flex-direction: column;
 }
 
 .header-addition {
@@ -34,10 +67,6 @@
   padding: 0;
   justify-content: space-around;
 }
-
-/* .articleDetails h2 {
-  font-size: 2.5rem;
-} */
 
 .projectsHeader,
 #contact h2 {
@@ -50,14 +79,14 @@
   margin: 5rem 0 0 5rem;
 }
 
-.projectArticle:nth-child(even) {
+/* .projectArticle:nth-child(even) {
   background-size: cover;
   flex-direction: row-reverse;
-}
+} */
 
 .projectImage {
-  max-width: 525px;
-  max-height: 360px;
+  /* max-width: 525px; */
+  /* max-height: 360px; */
   transition: all;
   transition-duration: 0.5s;
   filter: drop-shadow(0 0 0.75rem #1c6ead);
@@ -68,10 +97,23 @@
   max-width: 30rem;
 }
 
+.technologies {
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.technologyItem {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+}
+
 .btnContainer {
+  width: 100%;
   justify-content: flex-end;
+  /* justify-self: flex-end; */
   display: flex;
   gap: 1rem;
+  margin-top: auto;
 }
 
 .btn {

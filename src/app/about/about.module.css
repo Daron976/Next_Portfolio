@@ -31,15 +31,18 @@
   font-size: 1.4rem;
   gap: 2.55rem;
   text-align: left;
+  width: 8.5rem;
   /* margin-top: 2rem; */
   /* justify-content: space-between; */
 }
 
 .underline {
-  text-decoration: underline;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  text-decoration: underline #1c6ead;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; */
+  filter: drop-shadow(2px 4px 6px #1c6ead); 
   transition: all;
   transition-duration: 0.5s;
+  padding-right: auto;
 }
 
 /* .aboutNavItems::after {
@@ -170,8 +173,9 @@
 
 .aboutNavItems:hover {
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; */
   text-decoration: underline;
+  filter: drop-shadow(2px 4px 6px #1c6ead);
 }
 
 /* animation keyframes */

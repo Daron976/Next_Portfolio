@@ -1,3 +1,27 @@
+import awesomeTutors from "../../../public/content_images/awesomeTutors.png";
+import picTweak from "../../../public/content_images/picTweak.png";
+import bookShelf from "../../../public/content_images/bookShelf.png";
+import forenomic from "../../../public/content_images/forenomic.png";
+import mathMagician from "../../../public/content_images/mathMagician.png";
+import currex from "../../../public/content_images/currex.png";
+import climateChange from "../../../public/content_images/climateChange.png";
+import { BiLogoJavascript } from "react-icons/bi";
+import { SiJest } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
+import { SiRubygems } from "react-icons/si";
+import { SiWebpack } from "react-icons/si";
+import { SiRubyonrails } from "react-icons/si";
+import { SiTestinglibrary } from "react-icons/si";
+import { SiCss3 } from "react-icons/si";
+import { SiRuby } from "react-icons/si";
+import { BiLogoHtml5 } from "react-icons/bi";
+import { DiSass } from "react-icons/di";
+import { TbBrandVscode } from "react-icons/tb";
+import { BiLogoReact } from "react-icons/bi";
+import { SiSwagger } from "react-icons/si";
+import fabricjs from "../../../public/content_images/fabricjs.svg";
+import rspec from "../../../public/content_images/rspec.svg";
+
 export const emailExp =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
@@ -6,12 +30,35 @@ export const projectData = [
     title: "QuickMaths",
     description:
       "This is a Full stack web application with a Ruby on Rails back-end and a React front-end. This application allows users to make reservations to schedule appointments with Math tutors.",
-    imgurl:
-      "https://github.com/Daron976/Next_Portfolio/blob/dev/public/content_images/awesomTutors.png",
-    src: "Daron976/DKW/main/src/images/quickmaths.png",
-    width: 525,
-    heigth: 360,
-    loader: "https://raw.githubusercontent.com",
+    card: "awesomeTutors",
+    value: 1,
+    display: true,
+    width: 735,
+    heigth: 400,
+    src: awesomeTutors,
+    technologies: [
+      { icon: <SiRuby />, link: "https://www.ruby-lang.org/en/" },
+      { icon: <SiRubyonrails />, link: "https://rubyonrails.org/" },
+      { icon: <BiLogoReact />, link: "https://react.dev/" },
+      { icon: <SiRedux />, link: "https://react-redux.js.org/" },
+      {
+        icon: <BiLogoJavascript />,
+        link: "https://www.javascript.com/",
+      },
+      { icon: <BiLogoHtml5 />, link: "https://html.com/" },
+      { icon: <DiSass />, link: "https://sass-lang.com/" },
+      { icon: <SiRubygems />, link: "https://rubygems.org/" },
+      {
+        icon: <SiTestinglibrary />,
+        link: "https://testing-library.com/",
+      },
+      // { icon: rspec, link: "https://rspec.info/",  },
+      { icon: <SiSwagger />, link: "https://swagger.io/" },
+      {
+        icon: <TbBrandVscode />,
+        link: "https://code.visualstudio.com/",
+      },
+    ],
     live: "https://quickmaths145.netlify.app/",
     source: "https://github.com/laiifuu/QuickMaths-BackEnd",
   },
@@ -19,12 +66,34 @@ export const projectData = [
     title: "PicTweak",
     description:
       "This is a filter application that allows users to edit an image with various filter options and download said image.",
-    imgurl:
-      "https://github.com/Daron976/Next_Portfolio/blob/dev/public/content_images/pictweak.png",
-    src: "Daron976/DKW/main/src/images/forenomic.png",
-    width: 525,
-    heigth: 360,
-    loader: "https://raw.githubusercontent.com",
+    card: "picTweak",
+    value: 2,
+    display: false,
+    width: 735,
+    heigth: 400,
+    src: picTweak,
+    technologies: [
+      { icon: <BiLogoReact />, link: "https://react.dev/" },
+      {
+        icon: <BiLogoJavascript />,
+        link: "https://www.javascript.com/",
+      },
+      { icon: <BiLogoHtml5 />, link: "https://html.com/" },
+      {
+        icon: <SiCss3 />,
+        link: "https://www.w3.org/Style/CSS/Overview.en.html",
+      },
+      // { icon: fabricjs, link: "http://fabricjs.com/", },
+      {
+        icon: <SiTestinglibrary />,
+        link: "https://testing-library.com/",
+      },
+      { icon: <SiJest />, link: "https://jestjs.io/" },
+      {
+        icon: <TbBrandVscode />,
+        link: "https://code.visualstudio.com/",
+      },
+    ],
     live: "https://daron976.github.io/Pic-Tweak/",
     source: "https://github.com/Daron976/Pic-Tweak",
   },
@@ -32,12 +101,27 @@ export const projectData = [
     title: "Forenomic",
     description:
       "This is a full stack Ruby on Rails application with authorization and authentification. This application allows users to track their spending during a period of time by making an account of all transactions in various categories.",
-    imgurl:
-      "https://github.com/Daron976/Next_Portfolio/blob/dev/public/content_images/forenomic.png",
-    src: "Daron976/DKW/main/src/images/forenomic.png",
-    width: 360,
-    heigth: 360,
-    loader: "https://raw.githubusercontent.com",
+    card: "forenomic",
+    value: 3,
+    display: false,
+    width: 420,
+    heigth: 370,
+    src: forenomic,
+    technologies: [
+      { icon: <SiRuby />, link: "https://www.ruby-lang.org/en/" },
+      { icon: <SiRubyonrails />, link: "https://rubyonrails.org/" },
+      { icon: <BiLogoHtml5 />, link: "https://html.com/" },
+      {
+        icon: <SiCss3 />,
+        link: "https://www.w3.org/Style/CSS/Overview.en.html",
+      },
+      { icon: <SiRubygems />, link: "https://rubygems.org/" },
+      // { icon: rspec, link: "https://rspec.info/", },
+      {
+        icon: <TbBrandVscode />,
+        link: "https://code.visualstudio.com/",
+      },
+    ],
     live: "https://forenomic.onrender.com/",
     source: "https://github.com/Daron976/Forenomic",
   },
@@ -45,12 +129,34 @@ export const projectData = [
     title: "Currex",
     description:
       "This is a currency exchange app that allows users to convert the currency of any country to the another currency while providing data about the country in question.",
-    imgurl:
-      "https://github.com/Daron976/Next_Portfolio/blob/dev/public/content_images/currex.png",
-    src: "Daron976/DKW/main/src/images/currex.png",
-    width: 525,
-    heigth: 360,
-    loader: "https://raw.githubusercontent.com",
+    card: "currex",
+    value: 4,
+    display: false,
+    width: 735,
+    heigth: 400,
+    src: currex,
+    technologies: [
+      { icon: <BiLogoReact />, link: "https://react.dev/" },
+      { icon: <SiRedux />, link: "https://react-redux.js.org/" },
+      {
+        icon: <BiLogoJavascript />,
+        link: "https://www.javascript.com/",
+      },
+      { icon: <BiLogoHtml5 />, link: "https://html.com/" },
+      {
+        icon: <SiCss3 />,
+        link: "https://www.w3.org/Style/CSS/Overview.en.html",
+      },
+      {
+        icon: <SiTestinglibrary />,
+        link: "https://testing-library.com/",
+      },
+      { icon: <SiJest />, link: "https://jestjs.io/" },
+      {
+        icon: <TbBrandVscode />,
+        link: "https://code.visualstudio.com/",
+      },
+    ],
     live: "https://currex976.netlify.app/",
     source: "https://github.com/Daron976/currency-ex",
   },
@@ -58,12 +164,29 @@ export const projectData = [
     title: "BookShelf",
     description:
       "In this project, I use react to create a single-page app for a Bookshelf that enables users to add or remove books with extra data stored in an external API",
-    imgurl:
-      "https://github.com/Daron976/Next_Portfolio/blob/dev/public/content_images/bookshelf.png",
-    src: "Daron976/DKW/main/src/images/bookshelf.png",
-    width: 525,
-    heigth: 360,
-    loader: "https://raw.githubusercontent.com",
+    card: "bookShelf",
+    value: 5,
+    display: false,
+    src: bookShelf,
+    technologies: [
+      { icon: <BiLogoReact />, link: "https://react.dev/" },
+      {
+        icon: <BiLogoJavascript />,
+        link: "https://www.javascript.com/",
+      },
+      { icon: <BiLogoHtml5 />, link: "https://html.com/" },
+      {
+        icon: <SiCss3 />,
+        link: "https://www.w3.org/Style/CSS/Overview.en.html",
+      },
+      { icon: <SiWebpack />, link: "https://webpack.js.org/" },
+      {
+        icon: <TbBrandVscode />,
+        link: "https://code.visualstudio.com/",
+      },
+    ],
+    width: 735,
+    heigth: 400,
     live: "https://bookshelf976.netlify.app/",
     source: "https://github.com/Daron976/Bookshelf",
   },
@@ -71,12 +194,29 @@ export const projectData = [
     title: "Math Magician",
     description:
       "In this project, I use react to create a single-page app that contains a working calculator with a random quote.",
-    imgurl:
-      "https://github.com/Daron976/Next_Portfolio/blob/dev/public/content_images/mathmagician.png",
-    src: "Daron976/DKW/main/src/images/mathmagician.png",
-    width: 525,
-    heigth: 360,
-    loader: "https://raw.githubusercontent.com",
+    card: "mathagician",
+    value: 6,
+    display: false,
+    width: 735,
+    heigth: 400,
+    src: mathMagician,
+    technologies: [
+      { icon: <BiLogoReact />, link: "https://react.dev/" },
+      {
+        icon: <BiLogoJavascript />,
+        link: "https://www.javascript.com/",
+      },
+      { icon: <BiLogoHtml5 />, link: "https://html.com/" },
+      {
+        icon: <SiCss3 />,
+        link: "https://www.w3.org/Style/CSS/Overview.en.html",
+      },
+      { icon: <SiWebpack />, link: "https://webpack.js.org/" },
+      {
+        icon: <TbBrandVscode />,
+        link: "https://code.visualstudio.com/",
+      },
+    ],
     live: "https://caltake.netlify.app/",
     source: "https://github.com/Daron976/Math-magician",
   },
@@ -84,12 +224,27 @@ export const projectData = [
     title: "Climate Change Conference",
     description:
       "This is a website for a climate change conference which contains details about the purpose, audience and speakers that will be present, as well as how the programme will unfold during the time of the conference.",
-    imgurl:
-      "https://github.com/Daron976/Next_Portfolio/blob/dev/public/content_images/climateChange.png",
-    src: "Daron976/DKW/main/src/images/climate.png",
-    width: 525,
-    heigth: 360,
-    loader: "https://raw.githubusercontent.com",
+    card: "climateChange",
+    value: 7,
+    display: false,
+    width: 735,
+    heigth: 400,
+    src: climateChange,
+    technologies: [
+      {
+        icon: <BiLogoJavascript />,
+        link: "https://www.javascript.com/",
+      },
+      { icon: <BiLogoHtml5 />, link: "https://html.com/" },
+      {
+        icon: <SiCss3 />,
+        link: "https://www.w3.org/Style/CSS/Overview.en.html",
+      },
+      {
+        icon: <TbBrandVscode />,
+        link: "https://code.visualstudio.com/",
+      },
+    ],
     live: "https://daron976.github.io/Climate-Change-Conference/",
     source: "https://github.com/Daron976/Climate-Change-Conference",
   },
