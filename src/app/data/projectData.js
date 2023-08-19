@@ -31,11 +31,13 @@ export const projectData = [
     description:
       "This is a Full stack web application with a Ruby on Rails back-end and a React front-end. This application allows users to make reservations to schedule appointments with Math tutors.",
     card: "awesomeTutors",
+    imgURL:
+      "https://raw.githubusercontent.com/Daron976/portfolio/main/images/awesomeTutors.png",
     value: 1,
     display: true,
     width: 500,
     heigth: 280,
-    src: awesomeTutors,
+    src: "Daron976/portfolio/main/images/awesomeTutors.png",
     technologies: [
       { icon: <SiRuby />, link: "https://www.ruby-lang.org/en/" },
       { icon: <SiRubyonrails />, link: "https://rubyonrails.org/" },
@@ -67,11 +69,13 @@ export const projectData = [
     description:
       "This is a filter application that allows users to edit an image with various filter options and download said image.",
     card: "picTweak",
+    imgURL:
+      "https://raw.githubusercontent.com/Daron976/portfolio/main/images/pictweak.png",
     value: 2,
     display: false,
     width: 500,
     heigth: 280,
-    src: picTweak,
+    src: "Daron976/portfolio/main/images/pictweak.png",
     technologies: [
       { icon: <BiLogoReact />, link: "https://react.dev/" },
       {
@@ -102,11 +106,13 @@ export const projectData = [
     description:
       "This is a full stack Ruby on Rails application with authorization and authentification. This application allows users to track their spending during a period of time by making an account of all transactions in various categories.",
     card: "forenomic",
+    imgURL:
+      "https://raw.githubusercontent.com/Daron976/portfolio/main/images/forenomic.png",
     value: 3,
     display: false,
     width: 320,
     heigth: 280,
-    src: forenomic,
+    src: "Daron976/portfolio/main/images/forenomic.png",
     technologies: [
       { icon: <SiRuby />, link: "https://www.ruby-lang.org/en/" },
       { icon: <SiRubyonrails />, link: "https://rubyonrails.org/" },
@@ -130,11 +136,13 @@ export const projectData = [
     description:
       "This is a currency exchange app that allows users to convert the currency of any country to the another currency while providing data about the country in question.",
     card: "currex",
+    imgURL:
+      "https://raw.githubusercontent.com/Daron976/portfolio/main/images/currex.png",
     value: 4,
     display: false,
     width: 500,
     heigth: 280,
-    src: currex,
+    src: "Daron976/portfolio/main/images/currex.png",
     technologies: [
       { icon: <BiLogoReact />, link: "https://react.dev/" },
       { icon: <SiRedux />, link: "https://react-redux.js.org/" },
@@ -165,9 +173,11 @@ export const projectData = [
     description:
       "In this project, I use react to create a single-page app for a Bookshelf that enables users to add or remove books with extra data stored in an external API",
     card: "bookShelf",
+    imgURL:
+      "https://raw.githubusercontent.com/Daron976/portfolio/main/images/bookshelf.png",
     value: 5,
     display: false,
-    src: bookShelf,
+    src: "Daron976/portfolio/main/images/bookshelf.png",
     technologies: [
       { icon: <BiLogoReact />, link: "https://react.dev/" },
       {
@@ -195,11 +205,13 @@ export const projectData = [
     description:
       "In this project, I use react to create a single-page app that contains a working calculator with a random quote.",
     card: "mathagician",
+    imgURL:
+      "https://raw.githubusercontent.com/Daron976/portfolio/main/images/mathmagician.png",
     value: 6,
     display: false,
     width: 500,
     heigth: 280,
-    src: mathMagician,
+    src: "Daron976/portfolio/main/images/mathmagician.png",
     technologies: [
       { icon: <BiLogoReact />, link: "https://react.dev/" },
       {
@@ -225,11 +237,13 @@ export const projectData = [
     description:
       "This is a website for a climate change conference which contains details about the purpose, audience and speakers that will be present, as well as how the programme will unfold during the time of the conference.",
     card: "climateChange",
+    imgURL:
+      "https://raw.githubusercontent.com/Daron976/portfolio/main/images/climateChange.png",
     value: 7,
     display: false,
     width: 500,
     heigth: 280,
-    src: climateChange,
+    src: "Daron976/portfolio/main/images/climateChange.png",
     technologies: [
       {
         icon: <BiLogoJavascript />,

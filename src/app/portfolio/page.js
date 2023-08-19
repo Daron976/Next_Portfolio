@@ -41,6 +41,10 @@ export default function Portfolio() {
     });
   };
 
+  const imageLoader = ({ src, width}) => {
+    return `https://raw.githubusercontent.com/${src}?w=${width}&q=${100}`;
+  };
+
   useEffect(() => {
     setDisplay(false);
   }, [display]);
@@ -87,6 +91,7 @@ export default function Portfolio() {
                       // styles.projectImage
                     }
                     // loader={imageLoader}
+                    loader={imageLoader}
                     src={project.src}
                     width={project.width}
                     height={project.heigth}
