@@ -5,7 +5,7 @@ import { useState } from "react";
 import "../globals.css";
 import Link from "next/link";
 
-export default function about() {
+export default function About() {
   const [aboutMe, setAboutMe] = useState(false);
   const [exp, setExp] = useState(false);
   const [skill, setSkill] = useState(true);
@@ -71,9 +71,9 @@ export default function about() {
               Hello there,
               <br />
               Have you ever looked at something and thought{" "}
-              <em>"I wonder how that was built"</em> or{" "}
-              <em>"I wonder how that works"</em>. Well, that's me. Curiosity
-              killed a cat, but thankfully I'm still alive, also I'm not a cat.
+              <em>&quot;I wonder how that was built&quot;</em> or{" "}
+              <em>&quot;I wonder how that works&quot;</em>. Well, that&apos;s me. Curiosity
+              killed a cat, but thankfully I&apos;m still alive, also I&apos;m not a cat.
               I am a Software developer and an automobile enthusiast who loves
               to solve problems. Allow me to solve yours ;&#41;.
               <br />
@@ -82,7 +82,7 @@ export default function about() {
               <br />
               <Link href="/contact">
                 <strong>
-                  <em>Don't hesitate to reach out.</em>
+                  <em>Don&apos;t hesitate to reach out.</em>
                 </strong>
               </Link>
             </p>
