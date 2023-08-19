@@ -22,12 +22,6 @@ import { TbBrandVscode } from "react-icons/tb";
 import { BiLogoReact } from "react-icons/bi";
 import { SiSwagger } from "react-icons/si";
 
-export const metadata = {
-  title: "Porfolio",
-  description:
-    "This is the portfolio page with some of the projects I have built individually or as a team",
-};
-
 export default function Portfolio() {
   const [display, setDisplay] = useState(false);
 

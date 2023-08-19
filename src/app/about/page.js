@@ -5,11 +5,6 @@ import { useState } from "react";
 import "../globals.css";
 import Link from "next/link";
 
-export const metadata = {
-  title: 'About',
-  description: 'This is the about page with all the details about who I am, my journey and capabilities',
-}
-
 export default function about() {
   const [aboutMe, setAboutMe] = useState(false);
   const [exp, setExp] = useState(false);

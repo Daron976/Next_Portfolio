@@ -4,12 +4,6 @@ import { useState } from "react";
 import "../globals.css";
 import { emailExp } from "../data/projectData";
 
-export const metadata = {
-  title: "Contact",
-  description:
-    "This is the contact page where you can send me a personal email",
-};
-
 export default function Contact() {
   const [fillMsg, setFillMsg] = useState(false);
   const [notValid, setNotValid] = useState(false);
