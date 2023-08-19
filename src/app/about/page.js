@@ -5,9 +5,9 @@ import "../globals.css";
 import Link from "next/link";
 
 export default function about() {
-  const [aboutMe, setAboutMe] = useState(true);
+  const [aboutMe, setAboutMe] = useState(false);
   const [exp, setExp] = useState(false);
-  const [skill, setSkill] = useState(false);
+  const [skill, setSkill] = useState(true);
 
   return (
     <>
@@ -178,6 +178,14 @@ export default function about() {
               </li>
             </ul>
           </div>
+          {/* <div className={`${styles.btnContainer} flex`}>
+            <button type="button" id="previous" className="btn" name="previous">
+              Previous
+            </button>
+            <button type="button" id="next" className="btn" name="next">
+              Next
+            </button>
+          </div> */}
         </section>
       </main>
     </>

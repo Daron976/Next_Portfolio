@@ -451,6 +451,10 @@ li {
     display: flex;
     /* flex-direction: row; */
   }
+
+  .rightLine {
+    border: none;
+  }
 }
 
 /* mobile */
