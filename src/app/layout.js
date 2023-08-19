@@ -107,7 +107,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <header>
           <nav className="desktop-header">
-            <div>
+            <div className="imgContainer">
               <Image src={logo} width={88} height={80} alt="logo" />
             </div>
             <div className="flex menu-container transition">
@@ -166,11 +166,11 @@ export default function RootLayout({ children }) {
             </ul>
             <div className="footer-text">
               <p>
-                daronkwiafe@gmail.com
-                <br />
-                +27 65 747 8746
-                <br />
-                Sandton, South Africa
+                <span className="email">daronkwiafe@gmail.com</span>
+                <span className="separator firstSep">|</span>
+                <span className="phone">+27 65 747 8746</span>
+                <span className="separator secSep">|</span>
+                <span className="location">Sandton, South Africa</span>
               </p>
               <p>©2023 Daron Wiafe. All rights reserved.</p>
             </div>
