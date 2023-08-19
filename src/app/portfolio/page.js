@@ -1,14 +1,12 @@
 "use client";
 import styles from "./portfolio.module.css";
 import { useState, useEffect } from "react";
-// import { useEffect, useState } from "react";
 import "../globals.css";
 import Link from "next/link";
-// import curious from "../../../public/content_images/currex.png";
 import Image from "next/image";
 import projectData from "../data/projectData";
-import { BiAbacus, BiLogoJava } from "react-icons/bi";
 import { IconContext } from "react-icons";
+import { BiAbacus, BiLogoJava } from "react-icons/bi";
 import { BiLogoJavascript } from "react-icons/bi";
 import { SiJest } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
@@ -23,8 +21,12 @@ import { DiSass } from "react-icons/di";
 import { TbBrandVscode } from "react-icons/tb";
 import { BiLogoReact } from "react-icons/bi";
 import { SiSwagger } from "react-icons/si";
-import fabricjs from "../../../public/content_images/fabricjs.svg";
-import rspec from "../../../public/content_images/rspec.svg";
+
+export const metadata = {
+  title: "Porfolio",
+  description:
+    "This is the portfolio page with some of the projects I have built individually or as a team",
+};
 
 export default function Portfolio() {
   const [display, setDisplay] = useState(false);
@@ -41,7 +43,7 @@ export default function Portfolio() {
     });
   };
 
-  const imageLoader = ({ src, width}) => {
+  const imageLoader = ({ src, width }) => {
     return `https://raw.githubusercontent.com/${src}?w=${width}&q=${100}`;
   };
 

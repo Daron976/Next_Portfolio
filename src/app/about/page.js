@@ -1,8 +1,14 @@
 "use client";
+// import { Metadata } from "next";
 import styles from "./about.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../globals.css";
 import Link from "next/link";
+
+export const metadata = {
+  title: 'About',
+  description: 'This is the about page with all the details about who I am, my journey and capabilities',
+}
 
 export default function about() {
   const [aboutMe, setAboutMe] = useState(false);

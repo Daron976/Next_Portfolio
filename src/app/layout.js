@@ -1,8 +1,5 @@
 "use client";
-// import styles from "./page.module.css";
 import { useEffect, useState } from "react";
-import { HiMenuAlt2 } from "react-icons/hi";
-import { HiMenuAlt3 } from "react-icons/hi";
 import { HiOutlineHome } from "react-icons/hi";
 import { SiAboutdotme } from "react-icons/si";
 import { MdOutlineCases } from "react-icons/md";
@@ -29,7 +26,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   const [animation, setAnimation] = useState(true);
-  const [clicked, setClicked] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -111,23 +107,6 @@ export default function RootLayout({ children }) {
               <Image src={logo} width={88} height={80} alt="logo" />
             </div>
             <div className="flex menu-container transition">
-              {/* <div
-                className="menu-btn-container trigger-in"
-                onClick={() => {
-                  if (!clicked) {
-                    setClicked(true);
-                  } else setClicked(false);
-                }}
-              >
-                <IconContext.Provider
-                  value={{
-                    size: "2.5em",
-                    className: "menu-open-btn transition",
-                  }}
-                >
-                  {clicked ? <HiMenuAlt2 /> : <HiMenuAlt3 />}
-                </IconContext.Provider>
-              </div> */}
               <ul className="desktop-menu flex transition slide-in">
                 {iconItems
                   .filter((item) => item.pos !== "footer")

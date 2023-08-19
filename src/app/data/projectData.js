@@ -1,10 +1,3 @@
-import awesomeTutors from "../../../public/content_images/awesomeTutors.png";
-import picTweak from "../../../public/content_images/picTweak.png";
-import bookShelf from "../../../public/content_images/bookShelf.png";
-import forenomic from "../../../public/content_images/forenomic.png";
-import mathMagician from "../../../public/content_images/mathMagician.png";
-import currex from "../../../public/content_images/currex.png";
-import climateChange from "../../../public/content_images/climateChange.png";
 import { BiLogoJavascript } from "react-icons/bi";
 import { SiJest } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
@@ -19,8 +12,6 @@ import { DiSass } from "react-icons/di";
 import { TbBrandVscode } from "react-icons/tb";
 import { BiLogoReact } from "react-icons/bi";
 import { SiSwagger } from "react-icons/si";
-import fabricjs from "../../../public/content_images/fabricjs.svg";
-import rspec from "../../../public/content_images/rspec.svg";
 
 export const emailExp =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;

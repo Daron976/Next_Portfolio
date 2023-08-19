@@ -1,13 +1,17 @@
 "use client";
 import styles from "./contact.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../globals.css";
-import Link from "next/link";
 import { emailExp } from "../data/projectData";
+
+export const metadata = {
+  title: "Contact",
+  description:
+    "This is the contact page where you can send me a personal email",
+};
 
 export default function Contact() {
   const [fillMsg, setFillMsg] = useState(false);
-  const [valid, setValid] = useState(false);
   const [notValid, setNotValid] = useState(false);
   const [errMsgDisplay, setErrMsgDisplay] = useState(false);
 
@@ -25,9 +29,6 @@ export default function Contact() {
     if (name === false || email === false || msg === false || notValid) {
       e.preventDefault();
       setFillMsg(true);
-      // if (valid) {
-      //   setValid(true);
-      // }
     } else {
       setFillMsg(false);
     }
@@ -49,14 +50,9 @@ export default function Contact() {
   const emailStructure = (e) => {
     let curEmail = e.target.value;
     if (curEmail.match(emailExp)) {
-      setValid(true);
       setNotValid(false);
-      // alert(curEmail);
     } else {
       setNotValid(true);
-      setValid(false);
-    }
-    // console.log("test");
   };
   return (
     <>
@@ -114,9 +110,7 @@ export default function Contact() {
                     setMsgVal(e.target.value);
                     setMsg(true);
                   }}
-                >
-                  {/* {msgVal} */}
-                </textarea>
+                ></textarea>
               </label>
               <div
                 className={`${styles.errorMsg} flex flicker`}
