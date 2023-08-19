@@ -6,9 +6,9 @@ import "../globals.css";
 import Link from "next/link";
 
 export default function About() {
-  const [aboutMe, setAboutMe] = useState(false);
+  const [aboutMe, setAboutMe] = useState(true);
   const [exp, setExp] = useState(false);
-  const [skill, setSkill] = useState(true);
+  const [skill, setSkill] = useState(false);
 
   return (
     <>
@@ -72,10 +72,11 @@ export default function About() {
               <br />
               Have you ever looked at something and thought{" "}
               <em>&quot;I wonder how that was built&quot;</em> or{" "}
-              <em>&quot;I wonder how that works&quot;</em>. Well, that&apos;s me. Curiosity
-              killed a cat, but thankfully I&apos;m still alive, also I&apos;m not a cat.
-              I am a Software developer and an automobile enthusiast who loves
-              to solve problems. Allow me to solve yours ;&#41;.
+              <em>&quot;I wonder how that works&quot;</em>. Well, that&apos;s
+              me. Curiosity killed a cat, but thankfully I&apos;m still alive,
+              also I&apos;m not a cat. I am a Software developer and an
+              automobile enthusiast who loves to solve problems. Allow me to
+              solve yours ;&#41;.
               <br />
               Life is not certain, but when you are in the trenches, best
               believe you will find me there with you
