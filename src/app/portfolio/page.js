@@ -26,7 +26,7 @@ import { SiSwagger } from "react-icons/si";
 import fabricjs from "../../../public/content_images/fabricjs.svg";
 import rspec from "../../../public/content_images/rspec.svg";
 
-export default function Home() {
+export default function Portfolio() {
   const [display, setDisplay] = useState(false);
 
   const cardDisplay = (e) => {
@@ -51,7 +51,7 @@ export default function Home() {
         className={`${styles.projectContent} content flex`}
         data-testid="home"
       >
-        <ul className={`${styles.proHeaders} flex`}>
+        <ul className={`${styles.proHeaders} flex flicker`}>
           {projectData.map((project, idx) => {
             return (
               <li
@@ -109,8 +109,8 @@ export default function Home() {
                           className={`${styles.technologyItem} glass`}
                           key={idx}
                         >
-                          <Link href={tech.link} className="">
-                            <IconContext.Provider value={{ size: "2em" }}>
+                          <Link href={tech.link}>
+                            <IconContext.Provider value={{ size: "1.2rem" }}>
                               {tech.icon}
                             </IconContext.Provider>
                           </Link>
@@ -123,7 +123,7 @@ export default function Home() {
                       <button
                         type="button"
                         id="source"
-                        className={styles.btn}
+                        className="btn"
                         name="source"
                       >
                         Source
@@ -133,7 +133,7 @@ export default function Home() {
                       <button
                         type="button"
                         id="live"
-                        className={styles.btn}
+                        className="btn"
                         name="live"
                       >
                         Live

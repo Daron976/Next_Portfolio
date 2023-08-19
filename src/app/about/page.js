@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import "../globals.css";
 import Link from "next/link";
 
-export default function Home() {
+export default function about() {
   const [aboutMe, setAboutMe] = useState(true);
   const [exp, setExp] = useState(false);
   const [skill, setSkill] = useState(false);

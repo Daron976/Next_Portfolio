@@ -8,6 +8,7 @@
   align-items: center;
   transition: all;
   transition-duration: 0.5;
+  font-size: 0.85rem;
 }
 
 .content h1 {
@@ -28,7 +29,7 @@
   position: absolute;
   /* width: 900px; */
   display: inherit;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   gap: 2.55rem;
   text-align: left;
   width: 8.5rem;
@@ -66,26 +67,26 @@
 .textContent,
 .list,
 .projectArticle p {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   margin: 1rem 0;
   align-self: center;
   max-width: 60rem;
-  line-height: 2rem;
+  line-height: 1.6rem;
   /* color: rgb(70, 70, 70); */
 }
 
 .textContent {
   text-align: left;
-  width: 920px;
+  width: 730px;
 }
 
 .list {
   flex-direction: column;
   align-content: center;
-  padding: 1rem;
+  /* padding: 1rem; */
   /* min-height: 450px; */
-  gap: 0;
-  width: 920px;
+  gap: 1rem;
+  width: 730px;
 }
 
 .list em {

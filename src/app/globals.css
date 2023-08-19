@@ -94,7 +94,7 @@ li {
   padding: 0.25rem 0.5rem;
   background: rgb(255 255 255 / 8%);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgb(0 0 0 / 22%);
+  box-shadow: 0 4px 30px rgb(28 110 173 / 60%);
   backdrop-filter: blur(5px);
   border: 1px solid rgb(255 255 255 / 0%);
 }
@@ -110,17 +110,47 @@ li {
 
 .nav-icon {
   transition: all;
-  transition-duration: 0.5s;
+  transition-duration: 0.25s;
 }
 
-.nav-icon:hover {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+.nav-icon:hover,
+.social-icon:hover {
+  box-shadow: rgba(28, 110, 173, 0.2) 0px 60px 40px -7px;
   transform: translateY(-5px);
 }
 
 .menu-container {
   gap: 1rem;
   align-items: center;
+}
+
+.btn {
+  background: #ffffff14;
+  margin: 5px 0;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 15px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #38d2d2;
+  background-image: linear-gradient(
+    45deg,
+    #ffffff14 0%,
+    #38d2d2c8 51%,
+    #38d2d2 100%
+  );
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  background-position: right center;
+  text-decoration: none;
 }
 
 /* footer */
@@ -139,6 +169,12 @@ li {
   gap: 0;
   /* padding: 0.2rem; */
   border-radius: 10px;
+  transition: all;
+  transition-duration: 0.25s;
+}
+
+.footer-text {
+  font-size: 0.8rem;
 }
 
 /* animations */
@@ -168,11 +204,11 @@ li {
 }
 
 .appear {
-  animation: appear 3s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+  animation: appear 3s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
 }
 
 .appearText {
-  animation: appear 3s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
+  animation: appear 3s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
 }
 
 .flicker {
@@ -183,7 +219,7 @@ li {
 
 @keyframes slide-in {
   0% {
-    transform: translateX(150px);
+    transform: translateX(50px);
     opacity: 0;
   }
 

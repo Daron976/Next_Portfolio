@@ -61,43 +61,43 @@ export default function RootLayout({ children }) {
     {
       id: 3,
       pos: "header",
-      link: "/contacts",
+      link: "/contact",
       icon: <GrContactInfo />,
     },
     {
       id: 4,
       pos: "footer",
-      link: "/contacts",
+      link: "https://www.linkedin.com/in/daronkwiafe/",
       icon: <FaLinkedinIn />,
     },
     {
       id: 5,
       pos: "footer",
-      link: "/contacts",
+      link: "https://github.com/Daron976",
       icon: <FaGithub />,
     },
     {
       id: 6,
       pos: "footer",
-      link: "/contacts",
+      link: "https://angel.co/u/daronkwiafe",
       icon: <FaAngellist />,
     },
     {
       id: 7,
       pos: "footer",
-      link: "/contacts",
+      link: "https://www.facebook.com/daron.wiafe",
       icon: <BsMeta />,
     },
     {
       id: 8,
       pos: "footer",
-      link: "/contacts",
+      link: "https://twitter.com/WiafeDaron",
       icon: <BsTwitter />,
     },
     {
       id: 9,
       pos: "footer",
-      link: "/contacts",
+      link: "https://www.instagram.com/sagineer976/",
       icon: <BsInstagram />,
     },
   ];
@@ -108,7 +108,7 @@ export default function RootLayout({ children }) {
         <header>
           <nav className="desktop-header">
             <div>
-              <Image src={logo} width={110} height={100} alt="logo" />
+              <Image src={logo} width={88} height={80} alt="logo" />
             </div>
             <div className="flex menu-container transition">
               {/* <div
@@ -134,7 +134,9 @@ export default function RootLayout({ children }) {
                   .map((item) => (
                     <li key={item.id}>
                       <Link href={item.link}>
-                        <IconContext.Provider value={{ size: "2em", className: "nav-icon" }}>
+                        <IconContext.Provider
+                          value={{ size: "1.6rem", className: "nav-icon" }}
+                        >
                           {item.icon}
                         </IconContext.Provider>
                       </Link>
@@ -154,7 +156,7 @@ export default function RootLayout({ children }) {
                   <li key={item.id}>
                     <Link href={item.link}>
                       <IconContext.Provider
-                        value={{ size: "2.5em", className: "social-icon" }}
+                        value={{ size: "2rem", className: "social-icon" }}
                       >
                         {item.icon}
                       </IconContext.Provider>
@@ -162,8 +164,8 @@ export default function RootLayout({ children }) {
                   </li>
                 ))}
             </ul>
-            <div>
-              <p className="footer-text">
+            <div className="footer-text">
+              <p>
                 daronkwiafe@gmail.com
                 <br />
                 +27 65 747 8746
