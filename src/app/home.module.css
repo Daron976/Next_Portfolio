@@ -1,4 +1,6 @@
-/* homepage */
+.content {
+  margin: 0 !important;
+}
 
 .flex {
   display: flex;
@@ -21,6 +23,8 @@
 /* tablet (786px)*/
 
 @media screen and (max-width: 768px) {
+
+
   .name {
     font-size: 3.75rem;
   }

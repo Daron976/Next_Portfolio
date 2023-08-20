@@ -195,8 +195,7 @@
   }
 
   .header {
-    display: none;
-    width: max-content;
+    display: none !important;
   }
 
   .tabHeader {
