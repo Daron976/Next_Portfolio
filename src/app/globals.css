@@ -434,6 +434,15 @@ li {
     border: 1px solid rgb(255 255 255 / 0%);
   }
 
+  .social-icon {
+    gap: 3rem;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: unset;
+    border: none;
+  }
+
   .footer-text {
     display: flex;
     flex-direction: column;
