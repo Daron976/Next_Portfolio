@@ -23,7 +23,9 @@
 /* tablet (786px)*/
 
 @media screen and (max-width: 768px) {
-
+  .homeHeader {
+    margin-bottom: 5rem;
+  }
 
   .name {
     font-size: 3.75rem;
