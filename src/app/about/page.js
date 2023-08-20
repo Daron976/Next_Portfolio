@@ -64,9 +64,12 @@ export default function About() {
           </ul>
           <div
             className={
-              aboutMe ? `${styles.contentContainer} flex` : "display-none"
+              aboutMe
+                ? `${styles.contentContainer} ${styles.tabContent} flex`
+                : `${styles.tabContent} display-none`
             }
           >
+            <h1 className={`${styles.tabHeader} flicker`}>Who am I</h1>
             <p className={`${styles.textContent} glass slide-in`}>
               Hello there,
               <br />
@@ -89,10 +92,14 @@ export default function About() {
             </p>
           </div>
           <div
-            className={exp ? `${styles.contentContainer} flex` : "display-none"}
+            className={
+              exp
+                ? `${styles.contentContainer} flex`
+                : `${styles.tabContent} display-none`
+            }
           >
-            {/* <h1 className="flicker">Experience</h1> */}
-            <div className={`${styles.experienceContainer} flex`}>
+            {/* <div className={`${styles.experienceContainer} flex`}> */}
+              <h1 className={`${styles.tabHeader} flicker`}>Experience</h1>
               <div className={styles.experienceItems}>
                 <article className={`${styles.list} glass flex slide-in`}>
                   <h3>
@@ -137,14 +144,16 @@ export default function About() {
                   </p>
                 </article>
               </div>
-            </div>
+            {/* </div> */}
           </div>
           <div
             className={
-              skill ? `${styles.contentContainer} flex` : "display-none"
+              skill
+                ? `${styles.contentContainer} flex`
+                : `${styles.tabContent} display-none`
             }
           >
-            {/* <h1 className="flicker">Skills</h1> */}
+            <h1 className={`${styles.tabHeader} flicker`}>Skills</h1>
             <ul className={`${styles.list} ${styles.skillsUl} flex`}>
               <li className={`${styles.skillListItem} glass slide-in`}>
                 <h3 className="skill-header">Tech-Stack</h3>

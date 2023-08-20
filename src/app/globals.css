@@ -3,18 +3,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-size: 14px; */
-  /* scale: 0.9; */
-}
-
-html {
-  height: 100%;
 }
 
 body {
   background: linear-gradient(135deg, #e9e9e9cc, #45b6f8b3),
     url(../../public/background_images/floatingtop.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 body::-webkit-scrollbar {
@@ -77,12 +73,14 @@ li {
   flex-direction: row;
   position: fixed;
   width: 100%;
-  /* background-color: white; */
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  /* box-shadow: 2px -2px 5px 0 black; */
   z-index: 2;
+}
+
+.desktop-header {
+  padding: 0 1rem;
 }
 
 .desktop-menu,
@@ -90,7 +88,6 @@ li {
 .social-icon,
 .glass {
   gap: 3rem;
-  /* border: 1px solid black; */
   padding: 0.25rem 0.5rem;
   background: rgb(255 255 255 / 8%);
   border-radius: 16px;
@@ -157,7 +154,6 @@ li {
 
 .social-links {
   bottom: 0;
-  /* padding: 1rem 5rem 1rem 2.5rem; */
   align-items: flex-end;
 }
 
@@ -167,7 +163,6 @@ li {
 
 .social-icon {
   gap: 0;
-  /* padding: 0.2rem; */
   border-radius: 10px;
   transition: all;
   transition-duration: 0.25s;
@@ -290,18 +285,6 @@ li {
   }
 }
 
-/* @keyframes name-entrance {
-  0% {
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-} */
-
 @keyframes subtext-entrance {
   0% {
     transform: translateX(1000px);
@@ -422,9 +405,28 @@ li {
 /* tablet */
 
 @media screen and (max-width: 768px) {
+  .content {
+    height: 100%;
+    margin: 7rem 0 9rem;
+  }
+
+  .desktop-header {
+    top: 0;
+    align-items: center;
+    background: rgb(255 255 255 / 8%);
+    box-shadow: 0 4px 30px rgb(28 110 173 / 60%);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgb(255 255 255 / 0%);
+  }
+
   .social-links {
+    bottom: 0;
     flex-direction: column;
     align-items: center;
+    background: rgb(255 255 255 / 8%);
+    box-shadow: 0 4px 30px rgb(28 110 173 / 60%);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgb(255 255 255 / 0%);
   }
 
   .footer-text {
@@ -453,7 +455,6 @@ li {
 
   .footer-text p {
     display: flex;
-    /* flex-direction: row; */
   }
 
   .rightLine {
@@ -464,6 +465,15 @@ li {
 /* mobile */
 
 @media screen and (max-width: 567px) {
+  body {
+    height: 100%;
+    overflow: scroll;
+  }
+
+  .content {
+    margin-top: 5rem;
+  }
+
   .location,
   .secSep,
   .imgContainer {
@@ -471,6 +481,13 @@ li {
   }
 
   .desktop-header {
+    top: 0;
     justify-content: center;
+    background: none;
+    box-shadow: none;
+    backdrop-filter: unset;
+    border: none;
+    margin: 1rem 0;
+    padding: 0;
   }
 }
