@@ -1,5 +1,5 @@
 .content {
-  margin: 0 !important;
+  margin: auto;
 }
 
 .flex {
@@ -7,26 +7,22 @@
 }
 
 .name {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .subtext {
   display: block;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .msg {
-  margin-top: 5rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  margin-top: 3rem;
 }
 
 /* tablet (786px)*/
 
 @media screen and (max-width: 768px) {
-  .homeHeader {
-    margin-bottom: 5rem;
-  }
-
   .name {
     font-size: 3.75rem;
   }
@@ -41,7 +37,12 @@
   }
 }
 
+/* mobile */
+
 @media screen and (max-width: 576px) {
+  .content {
+    margin: 0 !important;
+  }
   .name {
     font-size: 2.5rem;
   }

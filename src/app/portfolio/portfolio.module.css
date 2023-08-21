@@ -22,13 +22,6 @@
   padding-right: 2rem;
 }
 
-.header:hover {
-  cursor: pointer;
-  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; */
-  text-decoration: underline;
-  filter: drop-shadow(2px 4px 6px #1c6ead);
-}
-
 .projectArticle,
 .header-addition {
   /* margin: 5rem 0; */
@@ -36,7 +29,7 @@
   background-position: center;
   /* display: flex; */
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   transition: all;
   transition-duration: 1s;
@@ -53,7 +46,7 @@
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  max-width: 20rem;
+  max-width: 15rem;
 }
 
 .projectDetails h1 {
@@ -89,9 +82,14 @@
   flex-direction: row-reverse;
 } */
 
-.projectImage {
-  /* max-width: 525px; */
-  /* max-height: 360px; */
+.tabState {
+  display: none;
+}
+
+#projectImage {
+  position: relative !important;
+  max-width: 500px;
+  max-height: 280px;
   border-top-left-radius: 0.6rem;
   border-bottom-left-radius: 0.6rem;
   transition: all;
@@ -116,11 +114,6 @@
   transition-duration: 0.25s;
 }
 
-.technologyItem:hover {
-  box-shadow: rgba(28, 110, 173, 0.2) 0px 60px 40px -7px;
-  transform: translateY(-5px);
-}
-
 .btnContainer {
   width: 100%;
   justify-content: flex-end;
@@ -132,4 +125,51 @@
 
 .carouselBtn {
   justify-content: space-between;
+}
+
+@media (hover: hover) {
+  .technologyItem:hover {
+    box-shadow: rgba(28, 110, 173, 0.2) 0px 60px 40px -7px;
+    transform: translateY(-5px);
+  }
+
+  .header:hover {
+    cursor: pointer;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; */
+    text-decoration: underline;
+    filter: drop-shadow(2px 4px 6px #1c6ead);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectContainer {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+
+  .projectArticle {
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 518px;
+  }
+
+  .proHeaders {
+    display: none;
+  }
+
+  #projectImage {
+    width: 500px !important;
+  }
+
+  .projectDetails {
+    justify-content: center;
+    max-width: 100%;
+    margin: 1rem;
+  }
+
+  .tabState {
+    display: flex;
+  }
 }

@@ -99,58 +99,55 @@ export default function About() {
             }
           >
             {/* <div className={`${styles.experienceContainer} flex`}> */}
-              <h1 className={`${styles.tabHeader} flicker`}>Experience</h1>
-              <div className={styles.experienceItems}>
-                <article className={`${styles.list} glass flex slide-in`}>
-                  <h3>
-                    Frontend developer / QA · Tweak <br />
-                    <em>May 2023 — Aug 2023</em>
-                  </h3>
-                  <li className={styles.listItem}>
-                    - Built, tested and maintained aspects of company software.
-                    <br /> - Create interactive tours and videos to help
-                    customers.
-                    <br /> - Troubleshot web application issues, wrote,
-                    maintained, and documented automated tests.
-                  </li>
-                </article>
-                <article className={`${styles.list} glass flex slide-in-ni`}>
-                  <h3>
-                    Software developer · Microverse
-                    <br />
-                    <em>Aug 2022 — April 2023</em>
-                  </h3>
-                  <li className={styles.listItem}>
-                    - Built, tested, and deployed maintainable, responsive web
-                    applications. with scrum methodologies.
-                    <br />
-                    -Troubleshot web application issues, and documented APIs
-                    with unit tests. <br />- Never missed project deadlines in
-                    over a 2000 hours in pair-programming and remote development
-                  </li>
-                </article>
-                <article className={`${styles.list} glass flex slide-in-san`}>
-                  <h3>
-                    Student Mentor · Microverse
-                    <br />
-                    <em>Sep 2023 — Oct 2023</em>
-                  </h3>
-                  <p className={styles.listItem}>
-                    - Mentored junior web developers, providing technical
-                    support and improvements to code code quality and overall
-                    performance.
-                    <br />- Provided advice and tips on maintaining motivation
-                    to preserve longevity in the program.
-                  </p>
-                </article>
-              </div>
+            <h1 className={`${styles.tabHeader} flicker`}>Experience</h1>
+            <div className={styles.experienceItems}>
+              <article className={`${styles.list} glass flex slide-in`}>
+                <h3>
+                  Frontend developer / QA · Tweak <br />
+                  <em>May 2023 — Aug 2023</em>
+                </h3>
+                <li className={styles.listItem}>
+                  - Built, tested and maintained aspects of company software.
+                  <br /> - Create interactive tours and videos to help
+                  customers.
+                  <br /> - Troubleshot web application issues, wrote,
+                  maintained, and documented automated tests.
+                </li>
+              </article>
+              <article className={`${styles.list} glass flex slide-in-ni`}>
+                <h3>
+                  Software developer · Microverse
+                  <br />
+                  <em>Aug 2022 — April 2023</em>
+                </h3>
+                <li className={styles.listItem}>
+                  - Built, tested, and deployed maintainable, responsive web
+                  applications. with scrum methodologies.
+                  <br />
+                  - Troubleshot web application issues, and documented APIs with
+                  unit tests. <br />- Never missed project deadlines in over a
+                  2000 hours in pair-programming and remote development
+                </li>
+              </article>
+              <article className={`${styles.list} glass flex slide-in-san`}>
+                <h3>
+                  Student Mentor · Microverse
+                  <br />
+                  <em>Sep 2023 — Oct 2023</em>
+                </h3>
+                <p className={styles.listItem}>
+                  - Mentored junior web developers, providing technical support
+                  and improvements to code code quality and overall performance.
+                  <br />- Provided advice and tips on maintaining motivation to
+                  preserve longevity in the program.
+                </p>
+              </article>
+            </div>
             {/* </div> */}
           </div>
           <div
             className={
-              skill
-                ? `${styles.contentContainer} flex`
-                : `${styles.tabContent} display-none`
+              skill ? `${styles.contentContainer} flex` : `${styles.tabContent}`
             }
           >
             <h1 className={`${styles.tabHeader} flicker`}>Skills</h1>

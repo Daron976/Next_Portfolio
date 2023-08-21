@@ -37,8 +37,8 @@ export default function Portfolio() {
     });
   };
 
-  const imageLoader = ({ src, width }) => {
-    return `https://raw.githubusercontent.com/${src}?w=${width}&q=${100}`;
+  const imageLoader = ({ src }) => {
+    return `https://raw.githubusercontent.com/${src}?q=${100}`;
   };
 
   useEffect(() => {
@@ -75,13 +75,13 @@ export default function Portfolio() {
                 className={
                   project.display
                     ? `${styles.projectArticle} flex glass slide-in`
-                    : `${styles.projectArticle} flex glass slide-out display-none`
+                    : `${styles.projectArticle} ${styles.tabState} flex glass`
                 }
                 value={project.value}
               >
                 <div className={styles.projectImageContainer}>
                   <Image
-                    className={
+                    id={
                       // animation
                       `${styles.projectImage}`
                       // styles.projectImage
@@ -89,8 +89,9 @@ export default function Portfolio() {
                     // loader={imageLoader}
                     loader={imageLoader}
                     src={project.src}
-                    width={project.width}
-                    height={project.heigth}
+                    fill={true}
+                    // width={project.width}
+                    // height={project.heigth}
                     alt="project image"
                   />
                 </div>

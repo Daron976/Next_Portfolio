@@ -6,7 +6,7 @@
 }
 
 html {
-  height: unset !important;
+  height: 100%;
 }
 
 body {
@@ -414,8 +414,8 @@ li {
 
 @media screen and (max-width: 768px) {
   .content {
-    height: 100%;
-    margin: 7rem 0 0;
+    height: 100vh;
+    /* margin: 7rem 0 0; */
   }
 
   .desktop-header {
@@ -428,7 +428,7 @@ li {
   }
 
   .social-links {
-    position: relative;
+    position: fixed;
     bottom: 0;
     flex-direction: column;
     align-items: center;
@@ -489,7 +489,7 @@ li {
 
 /* mobile */
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 576px) {
   body {
     height: 100%;
     overflow: scroll;
@@ -514,5 +514,33 @@ li {
     border: none;
     margin: 1rem 0;
     padding: 0;
+  }
+
+  .footer-text {
+    display: none;
+  }
+
+  .social-links {
+    position: fixed;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    box-shadow: none;
+    backdrop-filter: unset;
+    border: none;
+  }
+
+  .social-links ul {
+    padding: 0.25rem 0.5rem;
+    background: rgb(255 255 255 / 8%);
+    box-shadow: 0 4px 30px rgb(28 110 173 / 60%);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgb(255 255 255 / 0%);
+    border-radius: 16px;
+  }
+
+  .social-icon {
+    padding: 0.3rem;
   }
 }

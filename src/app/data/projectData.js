@@ -92,36 +92,36 @@ export const projectData = [
     live: "https://daron976.github.io/Pic-Tweak/",
     source: "https://github.com/Daron976/Pic-Tweak",
   },
-  {
-    title: "Forenomic",
-    description:
-      "This is a full stack Ruby on Rails application with authorization and authentification. This application allows users to track their spending during a period of time by making an account of all transactions in various categories.",
-    card: "forenomic",
-    imgURL:
-      "https://raw.githubusercontent.com/Daron976/portfolio/main/images/forenomic.png",
-    value: 3,
-    display: false,
-    width: 320,
-    heigth: 280,
-    src: "Daron976/portfolio/main/images/forenomic.png",
-    technologies: [
-      { icon: <SiRuby />, link: "https://www.ruby-lang.org/en/" },
-      { icon: <SiRubyonrails />, link: "https://rubyonrails.org/" },
-      { icon: <BiLogoHtml5 />, link: "https://html.com/" },
-      {
-        icon: <SiCss3 />,
-        link: "https://www.w3.org/Style/CSS/Overview.en.html",
-      },
-      { icon: <SiRubygems />, link: "https://rubygems.org/" },
-      // { icon: rspec, link: "https://rspec.info/", },
-      {
-        icon: <TbBrandVscode />,
-        link: "https://code.visualstudio.com/",
-      },
-    ],
-    live: "https://forenomic.onrender.com/",
-    source: "https://github.com/Daron976/Forenomic",
-  },
+  // {
+  //   title: "Forenomic",
+  //   description:
+  //     "This is a full stack Ruby on Rails application with authorization and authentification. This application allows users to track their spending during a period of time by making an account of all transactions in various categories.",
+  //   card: "forenomic",
+  //   imgURL:
+  //     "https://raw.githubusercontent.com/Daron976/portfolio/main/images/forenomic.png",
+  //   value: 3,
+  //   display: false,
+  //   width: 320,
+  //   heigth: 280,
+  //   src: "Daron976/portfolio/main/images/forenomic.png",
+  //   technologies: [
+  //     { icon: <SiRuby />, link: "https://www.ruby-lang.org/en/" },
+  //     { icon: <SiRubyonrails />, link: "https://rubyonrails.org/" },
+  //     { icon: <BiLogoHtml5 />, link: "https://html.com/" },
+  //     {
+  //       icon: <SiCss3 />,
+  //       link: "https://www.w3.org/Style/CSS/Overview.en.html",
+  //     },
+  //     { icon: <SiRubygems />, link: "https://rubygems.org/" },
+  //     // { icon: rspec, link: "https://rspec.info/", },
+  //     {
+  //       icon: <TbBrandVscode />,
+  //       link: "https://code.visualstudio.com/",
+  //     },
+  //   ],
+  //   live: "https://forenomic.onrender.com/",
+  //   source: "https://github.com/Daron976/Forenomic",
+  // },
   {
     title: "Currex",
     description:
