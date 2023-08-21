@@ -7,23 +7,16 @@
 }
 
 .content {
-  /* background: linear-gradient(
-      200deg,
-      rgba(255, 255, 255, 0.767),
-      rgba(255, 255, 255, 0.781)
-    ),
-    url(../src/images/contact.jpg); */
-  /* background-position: center;
-  background-size: cover; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 55rem;
+  height: 100vh;
   gap: 1rem;
 }
 
 .content h1 {
   font-size: 3rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: flex-start;
 }
@@ -31,7 +24,6 @@
 .contactForm {
   gap: 2rem;
   flex-direction: column;
-  /* color: #555; */
 }
 
 .formInput {
@@ -41,7 +33,6 @@
 
 .formInput input {
   background: none;
-  /* border: 1px solid #555; */
   height: 2.5rem;
   width: 20rem;
   padding: 1rem;
@@ -88,4 +79,50 @@
   box-shadow: 0 4px 30px rgb(0 0 0 / 22%);
   backdrop-filter: blur(5px);
   border: 1px solid rgb(255 255 255 / 0%);
+}
+
+/* tablet */
+
+@media screen and (max-width: 768px) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .formInput Input {
+    width: 15rem;
+  }
+
+  #formSubmission textarea {
+    width: 31rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    margin: 0 !important;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .formInput {
+    flex-direction: column;
+  }
+
+  .formInput Input,
+  #formSubmission textarea {
+    width: 20rem;
+  }
+
+  .formSubmission {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .formInput Input,
+  #formSubmission textarea {
+    width: 15rem;
+  }
 }

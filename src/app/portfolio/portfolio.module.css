@@ -6,11 +6,12 @@
   height: 100vh;
 }
 
-.projectContent h1 {
+.contentHeader {
   display: none;
 }
 
 .proHeaders {
+  display: flex;
   flex-direction: column;
   /* position: absolute; */
   /* width: 900px; */
@@ -150,7 +151,7 @@
     height: 100%;
   }
 
-  .projectContent h1 {
+  .contentHeader {
     display: block;
   }
 
@@ -165,6 +166,7 @@
     flex-direction: column;
     gap: 1.5rem;
     max-width: 518px;
+    height: 100%;
   }
 
   .proHeaders {

@@ -52,7 +52,7 @@ export default function Contact() {
 
   return (
     <>
-      <main className="content flex" data-testid="home">
+      <main className={`${styles.wrapper} content flex`} data-testid="home">
         <section id="contact" className={`${styles.content} flex`}>
           <div className={styles.contactSubmission}>
             <h1 className="flicker">Get In Touch</h1>

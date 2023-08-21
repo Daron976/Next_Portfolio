@@ -93,9 +93,7 @@ export default function About() {
           </div>
           <div
             className={
-              exp
-                ? `${styles.contentContainer} flex`
-                : `${styles.tabContent} display-none`
+              exp ? `${styles.contentContainer} flex` : `${styles.tabContent}`
             }
           >
             {/* <div className={`${styles.experienceContainer} flex`}> */}
