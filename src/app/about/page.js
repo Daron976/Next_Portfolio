@@ -12,7 +12,7 @@ export default function About() {
 
   return (
     <>
-      <main className="content flex" data-testid="home">
+      <main className={`${styles.wrapper} content flex`} data-testid="home">
         <section
           id="about"
           className={`${styles.content} flex`}
@@ -65,8 +65,8 @@ export default function About() {
           <div
             className={
               aboutMe
-                ? `${styles.contentContainer} ${styles.tabContent} flex`
-                : `${styles.tabContent} display-none`
+                ? `${styles.contentContainer} flex`
+                : `${styles.tabContent}`
             }
           >
             <h1 className={`${styles.tabHeader} flicker`}>Who am I</h1>

@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" id="home_container" className="overflow_container">
+    <html lang="en">
       <body>{children}</body>
     </html>
   );

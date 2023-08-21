@@ -51,6 +51,7 @@ export default function Portfolio() {
         className={`${styles.projectContent} content flex`}
         data-testid="home"
       >
+        <h1 className="flicker">Some of my work</h1>
         <ul className={`${styles.proHeaders} flex flicker`}>
           {projectData.map((project, idx) => {
             return (

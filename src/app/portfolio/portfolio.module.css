@@ -1,8 +1,13 @@
 .projectContent {
-  flex-direction: row !important;
+  flex-direction: row;
   align-items: center;
   gap: 2rem;
   justify-content: center;
+  height: 100vh;
+}
+
+.projectContent h1 {
+  display: none;
 }
 
 .proHeaders {
@@ -98,7 +103,6 @@
 }
 
 .projectArticle p {
-  /* margin: 2rem 0; */
   max-width: 30rem;
 }
 
@@ -117,7 +121,6 @@
 .btnContainer {
   width: 100%;
   justify-content: flex-end;
-  /* justify-self: flex-end; */
   display: flex;
   gap: 1rem;
   margin-top: auto;
@@ -135,13 +138,22 @@
 
   .header:hover {
     cursor: pointer;
-    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; */
     text-decoration: underline;
     filter: drop-shadow(2px 4px 6px #1c6ead);
   }
 }
 
 @media screen and (max-width: 768px) {
+  .projectContent {
+    flex-direction: column;
+    margin: 7rem 0 8rem;
+    height: 100%;
+  }
+
+  .projectContent h1 {
+    display: block;
+  }
+
   .projectContainer {
     flex-direction: column;
     gap: 2rem;
@@ -171,5 +183,33 @@
 
   .tabState {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .projectContent {
+    margin: 5rem 0;
+  }
+
+  .projectArticle {
+    max-width: 350px;
+  }
+
+  #projectImage {
+    width: 333px !important;
+  }
+
+  .btnContainer {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .projectArticle {
+    max-width: 300px;
+  }
+
+  #projectImage {
+    width: 285px !important;
   }
 }

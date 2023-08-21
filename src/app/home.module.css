@@ -1,9 +1,14 @@
 .content {
   margin: auto;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.flex {
-  display: flex;
+.homeHeader {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .name {
@@ -23,6 +28,10 @@
 /* tablet (786px)*/
 
 @media screen and (max-width: 768px) {
+  .homeHeader {
+    margin: auto 0;
+  }
+
   .name {
     font-size: 3.75rem;
   }
@@ -40,9 +49,9 @@
 /* mobile */
 
 @media screen and (max-width: 576px) {
-  .content {
+  /* .content {
     margin: 0 !important;
-  }
+  } */
   .name {
     font-size: 2.5rem;
   }
