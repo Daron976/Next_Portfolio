@@ -48,7 +48,7 @@ export default function Portfolio() {
   return (
     <>
       <main
-        className={`${styles.projectContent} content flex`}
+        className={`${styles.projectContent} flex`}
         data-testid="home"
       >
         <h1 className={`${styles.contentHeader} flicker`}>Some of my work</h1>
@@ -76,7 +76,7 @@ export default function Portfolio() {
                 className={
                   project.display
                     ? `${styles.projectArticle} flex glass slide-in`
-                    : `${styles.projectArticle} ${styles.tabState} flex glass`
+                    : `${styles.projectArticle} ${styles.tabState} glass`
                 }
                 value={project.value}
               >

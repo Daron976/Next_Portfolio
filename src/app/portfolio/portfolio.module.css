@@ -36,7 +36,7 @@
   /* display: flex; */
   justify-content: space-around;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 1rem !important;
   transition: all;
   transition-duration: 1s;
   max-width: 66.25rem;
@@ -52,7 +52,7 @@
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  max-width: 15rem;
+  max-width: 20rem;
 }
 
 .projectDetails h1 {
