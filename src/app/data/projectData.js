@@ -12,6 +12,12 @@ import { DiSass } from "react-icons/di";
 import { TbBrandVscode } from "react-icons/tb";
 import { BiLogoReact } from "react-icons/bi";
 import { SiSwagger } from "react-icons/si";
+import awesomeTutors from "../../../public/content_images/awesomeTutors.png";
+import currex from "../../../public/content_images/currex.png";
+import climateChange from "../../../public/content_images/climateChange.png";
+import pictweak from "../../../public/content_images/pictweak.png";
+import bookshelf from "../../../public/content_images/bookshelf.png";
+import mathmagician from "../../../public/content_images/mathmagician.png";
 
 export const emailExp =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -24,6 +30,7 @@ export const projectData = [
     card: "awesomeTutors",
     imgURL:
       "https://raw.githubusercontent.com/Daron976/portfolio/main/images/awesomeTutors.png",
+    imgBlob: awesomeTutors,
     value: 1,
     display: true,
     width: 500,
@@ -62,6 +69,7 @@ export const projectData = [
     card: "picTweak",
     imgURL:
       "https://raw.githubusercontent.com/Daron976/portfolio/main/images/pictweak.png",
+    imgBlob: pictweak,
     value: 2,
     display: false,
     width: 500,
@@ -99,6 +107,7 @@ export const projectData = [
   //   card: "forenomic",
   //   imgURL:
   //     "https://raw.githubusercontent.com/Daron976/portfolio/main/images/forenomic.png",
+  //   imgBlob: awesomeTutors,
   //   value: 3,
   //   display: false,
   //   width: 320,
@@ -129,6 +138,7 @@ export const projectData = [
     card: "currex",
     imgURL:
       "https://raw.githubusercontent.com/Daron976/portfolio/main/images/currex.png",
+    imgBlob: currex,
     value: 4,
     display: false,
     width: 500,
@@ -166,6 +176,7 @@ export const projectData = [
     card: "bookShelf",
     imgURL:
       "https://raw.githubusercontent.com/Daron976/portfolio/main/images/bookshelf.png",
+    imgBlob: bookshelf,
     value: 5,
     display: false,
     src: "Daron976/portfolio/main/images/bookshelf.png",
@@ -198,6 +209,7 @@ export const projectData = [
     card: "mathagician",
     imgURL:
       "https://raw.githubusercontent.com/Daron976/portfolio/main/images/mathmagician.png",
+    imgBlob: mathmagician,
     value: 6,
     display: false,
     width: 500,
@@ -230,6 +242,7 @@ export const projectData = [
     card: "climateChange",
     imgURL:
       "https://raw.githubusercontent.com/Daron976/portfolio/main/images/climateChange.png",
+    imgBlob: climateChange,
     value: 7,
     display: false,
     width: 500,

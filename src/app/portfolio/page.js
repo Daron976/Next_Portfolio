@@ -21,6 +21,12 @@ import { DiSass } from "react-icons/di";
 import { TbBrandVscode } from "react-icons/tb";
 import { BiLogoReact } from "react-icons/bi";
 import { SiSwagger } from "react-icons/si";
+import awesomeTutors from "../../../public/content_images/awesomeTutors.png";
+import currex from "../../../public/content_images/currex.png";
+import climateChange from "../../../public/content_images/climateChange.png";
+import pictweak from "../../../public/content_images/pictweak.png";
+import bookshelf from "../../../public/content_images/bookshelf.png";
+import mathmagician from "../../../public/content_images/mathmagician.png";
 
 export default function Portfolio() {
   const [display, setDisplay] = useState(false);
@@ -47,10 +53,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <main
-        className={`${styles.projectContent} flex`}
-        data-testid="home"
-      >
+      <main className={`${styles.projectContent} flex`} data-testid="home">
         <h1 className={`${styles.contentHeader} flicker`}>Some of my work</h1>
         <ul className={`${styles.proHeaders} flicker`}>
           {projectData.map((project, idx) => {
@@ -82,17 +85,8 @@ export default function Portfolio() {
               >
                 <div className={styles.projectImageContainer}>
                   <Image
-                    id={
-                      // animation
-                      `${styles.projectImage}`
-                      // styles.projectImage
-                    }
-                    // loader={imageLoader}
-                    loader={imageLoader}
-                    src={project.src}
-                    fill={true}
-                    // width={project.width}
-                    // height={project.heigth}
+                    id={`${styles.projectImage}`}
+                    src={project.imgBlob}
                     alt="project image"
                   />
                 </div>
