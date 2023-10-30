@@ -1,8 +1,6 @@
 "use client";
-// import { Metadata } from "next";
 import styles from "./about.module.css";
 import { useState } from "react";
-import "../globals.css";
 import Link from "next/link";
 
 export default function About() {
@@ -96,7 +94,6 @@ export default function About() {
               exp ? `${styles.contentContainer} flex` : `${styles.tabContent}`
             }
           >
-            {/* <div className={`${styles.experienceContainer} flex`}> */}
             <h1 className={`${styles.tabHeader} flicker`}>Experience</h1>
             <div className={styles.experienceItems}>
               <article className={`${styles.list} glass flex slide-in`}>
@@ -141,7 +138,6 @@ export default function About() {
                 </p>
               </article>
             </div>
-            {/* </div> */}
           </div>
           <div
             className={
@@ -184,14 +180,6 @@ export default function About() {
               </li>
             </ul>
           </div>
-          {/* <div className={`${styles.btnContainer} flex`}>
-            <button type="button" id="previous" className="btn" name="previous">
-              Previous
-            </button>
-            <button type="button" id="next" className="btn" name="next">
-              Next
-            </button>
-          </div> */}
         </section>
       </main>
     </>

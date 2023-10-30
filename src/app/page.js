@@ -1,12 +1,5 @@
-// "use client";
 import styles from "./home.module.css";
-// import "./home.css";
 import "./globals.css";
-
-export const metadata = {
-  // title: "Daron Wiafe",
-  // description: "Welcome to my portfolio",
-};
 
 export default function Home() {
   return (

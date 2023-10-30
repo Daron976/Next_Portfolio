@@ -1,7 +1,6 @@
 "use client";
 import styles from "./portfolio.module.css";
 import { useState, useEffect } from "react";
-import "../globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import projectData from "../data/projectData";
@@ -94,7 +93,6 @@ export default function Portfolio() {
                   className={
                     // animation
                     `${styles.projectDetails} flex`
-                    // : `${styles.projectDetails} glass flex`
                   }
                 >
                   <h1>{project.title}</h1>

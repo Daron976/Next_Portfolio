@@ -14,7 +14,6 @@ import { BsInstagram } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/logo_images/logo.png";
-import "./globals.css";
 
 export default function Template({ children }) {
   const [animation, setAnimation] = useState(true);

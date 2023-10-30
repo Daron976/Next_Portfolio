@@ -1,7 +1,6 @@
 "use client";
 import styles from "./contact.module.css";
 import { useState } from "react";
-import "../globals.css";
 import { emailExp } from "../data/projectData";
 
 export default function Contact() {

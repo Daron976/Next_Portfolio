@@ -13,8 +13,6 @@
 .proHeaders {
   display: flex;
   flex-direction: column;
-  /* position: absolute; */
-  /* width: 900px; */
   display: inherit;
   font-size: 1rem;
   font-weight: 700;
@@ -30,10 +28,8 @@
 
 .projectArticle,
 .header-addition {
-  /* margin: 5rem 0; */
   background-size: cover;
   background-position: center;
-  /* display: flex; */
   justify-content: space-around;
   align-items: flex-start;
   gap: 1rem !important;
@@ -44,7 +40,6 @@
   transition: all;
   transition-duration: 1s;
   text-align: left;
-  /* height: 500px; */
 }
 
 .projectDetails {
@@ -141,7 +136,6 @@
 
   .header {
     border-right: none;
-    /* text-decoration: underline #1c6ead; */
     filter: drop-shadow(2px 4px 6px #1c6ead);
     padding: 0;
   }
