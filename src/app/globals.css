@@ -176,7 +176,7 @@ li {
 
   .nav-icon:hover,
   .social-icon:hover {
-    box-shadow: rgba(28, 110, 173, 0.2) 0px 60px 40px -7px;
+    /* box-shadow: rgba(28, 110, 173, 0.2) 0px 60px 40px -7px; */
     transform: translateY(-5px);
   }
 
@@ -413,9 +413,14 @@ li {
     top: 0;
     align-items: center;
     background: rgb(255 255 255 / 8%);
-    box-shadow: 0 4px 30px rgb(28 110 173 / 60%);
     backdrop-filter: blur(5px);
     border: 1px solid rgb(255 255 255 / 0%);
+  }
+
+  .desktop-menu {
+    background: none;
+    backdrop-filter: none;
+    border: none;
   }
 
   .social-links {
@@ -424,7 +429,6 @@ li {
     flex-direction: column;
     align-items: center;
     background: rgb(255 255 255 / 8%);
-    box-shadow: 0 4px 30px rgb(28 110 173 / 60%);
     backdrop-filter: blur(5px);
     border: 1px solid rgb(255 255 255 / 0%);
   }
@@ -502,6 +506,12 @@ li {
     padding: 0;
   }
 
+  .desktop-menu {
+    background: rgb(255 255 255 / 8%);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgb(255 255 255 / 0%);
+  }
+
   .footer-text {
     display: none;
   }
@@ -520,13 +530,12 @@ li {
   .social-links ul {
     padding: 0.25rem 0.5rem;
     background: rgb(255 255 255 / 8%);
-    box-shadow: 0 4px 30px rgb(28 110 173 / 60%);
     backdrop-filter: blur(5px);
     border: 1px solid rgb(255 255 255 / 0%);
     border-radius: 16px;
   }
 
   .social-icon {
-    padding: 0.3rem;
+    padding: 0.1rem;
   }
 }

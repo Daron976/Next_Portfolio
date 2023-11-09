@@ -125,7 +125,7 @@ export default function Template({ children }) {
                 <li key={item.id}>
                   <Link href={item.link}>
                     <IconContext.Provider
-                      value={{ size: "2.5rem", className: "social-icon" }}
+                      value={{ size: "2.25rem", className: "social-icon" }}
                     >
                       {item.icon}
                     </IconContext.Provider>
