@@ -7,7 +7,7 @@ import { GrContactInfo } from "react-icons/gr";
 import { IconContext } from "react-icons";
 import { BsMeta } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaAngellist } from "react-icons/fa";
+import { SiWellfound } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
@@ -67,7 +67,7 @@ export default function Template({ children }) {
       id: 6,
       pos: "footer",
       link: "https://angel.co/u/daronkwiafe",
-      icon: <FaAngellist />,
+      icon: <SiWellfound />,
     },
     {
       id: 7,
