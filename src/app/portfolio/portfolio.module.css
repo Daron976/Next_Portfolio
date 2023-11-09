@@ -107,6 +107,10 @@
   margin-top: auto;
 }
 
+.btnContainer button {
+  border: 1px solid #b5b5b5;
+}
+
 .carouselBtn {
   justify-content: space-between;
 }
@@ -121,6 +125,10 @@
     cursor: pointer;
     text-decoration: underline;
     filter: drop-shadow(2px 4px 6px #1c6ead);
+  }
+
+  .btnContainer button:hover {
+    border-color: #1c6ead;
   }
 }
 

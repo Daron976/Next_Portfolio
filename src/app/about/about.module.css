@@ -92,10 +92,6 @@
   transition-duration: 0.5s;
 }
 
-.btn:hover {
-  cursor: pointer;
-}
-
 .prv {
   animation: notify-prv 0.9s ease-in-out infinite both;
 }
@@ -123,10 +119,6 @@
   flex-direction: row;
   justify-content: space-between;
   text-align: left;
-}
-
-.skillsUl h3 {
-  color: black;
 }
 
 .skillListItem {

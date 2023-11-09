@@ -53,7 +53,7 @@ export default function Contact() {
     <>
       <main className={`${styles.wrapper} content flex`} data-testid="home">
         <section id="contact" className={`${styles.content} flex`}>
-          <div className={styles.contactSubmission}>
+          <div className={`${styles.contactSubmission} glass`}>
             <h1 className="flicker">Get In Touch</h1>
             <form
               action="https://formspree.io/f/mwkzplvb"
@@ -68,7 +68,6 @@ export default function Contact() {
                     type="text"
                     name="name"
                     id="name"
-                    className="glass"
                     placeholder="Name"
                     value={nameVal}
                     onChange={(e) => {
@@ -82,7 +81,6 @@ export default function Contact() {
                     type="text"
                     name="email"
                     id="email"
-                    className="glass"
                     placeholder="Email"
                     value={emailVal}
                     onChange={(e) => {
@@ -98,7 +96,7 @@ export default function Contact() {
                   type="text"
                   name="message"
                   id="message"
-                  className="glass appearText"
+                  className="appearText"
                   placeholder="Message"
                   value={msgVal}
                   onChange={(e) => {

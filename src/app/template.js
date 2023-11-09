@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { HiOutlineHome } from "react-icons/hi";
 import { SiAboutdotme } from "react-icons/si";
 import { MdOutlineCases } from "react-icons/md";
-import { GrContactInfo } from "react-icons/gr";
+import { RiContactsFill } from "react-icons/ri";
 import { IconContext } from "react-icons";
 import { BsMeta } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -49,7 +49,7 @@ export default function Template({ children }) {
       id: 3,
       pos: "header",
       link: "/contact",
-      icon: <GrContactInfo />,
+      icon: <RiContactsFill />,
     },
     {
       id: 4,
@@ -97,14 +97,14 @@ export default function Template({ children }) {
             <Image src={logo} width={88} height={80} alt="logo" />
           </div>
           <div className="flex menu-container transition">
-            <ul className="desktop-menu flex transition slide-in">
+            <ul className="desktop-menu flex transition">
               {iconItems
                 .filter((item) => item.pos !== "footer")
                 .map((item) => (
                   <li key={item.id}>
                     <Link href={item.link}>
                       <IconContext.Provider
-                        value={{ size: "1.6rem", className: "nav-icon" }}
+                        value={{ size: "1.8rem", className: "nav-icon" }}
                       >
                         {item.icon}
                       </IconContext.Provider>
@@ -125,7 +125,7 @@ export default function Template({ children }) {
                 <li key={item.id}>
                   <Link href={item.link}>
                     <IconContext.Provider
-                      value={{ size: "2rem", className: "social-icon" }}
+                      value={{ size: "2.5rem", className: "social-icon" }}
                     >
                       {item.icon}
                     </IconContext.Provider>
