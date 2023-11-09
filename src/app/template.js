@@ -9,7 +9,7 @@ import { BsMeta } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaAngellist } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { BsTwitter } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
@@ -79,7 +79,7 @@ export default function Template({ children }) {
       id: 8,
       pos: "footer",
       link: "https://twitter.com/WiafeDaron",
-      icon: <BsTwitter />,
+      icon: <FaXTwitter />,
     },
     {
       id: 9,
