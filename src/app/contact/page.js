@@ -1,6 +1,6 @@
 "use client";
 import styles from "./contact.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { emailExp } from "../data/projectData";
 
 export default function Contact() {
@@ -16,6 +16,8 @@ export default function Contact() {
 
   const [msg, setMsg] = useState(false);
   const [msgVal, setMsgVal] = useState("");
+
+  const [animate, setAnimate] = useState(true);
 
   const isFilled = (e) => {
     errorDisplay();
@@ -40,21 +42,30 @@ export default function Contact() {
     }
   };
 
-  const emailStructure = (e) => {
-    let curEmail = e.target.value;
+  const emailStructure = () => {
+    let curEmail = emailVal;
     if (curEmail.match(emailExp)) {
       setNotValid(false);
     } else {
       setNotValid(true);
     }
+    setEmail(true);
   };
+
+  useEffect(() => {
+    if (!sessionStorage.getItem("contactOpen")) {
+      sessionStorage.setItem("contactOpen", true);
+    } else {
+      setAnimate(false);
+    }
+  }, []);
 
   return (
     <>
       <main className={`${styles.wrapper} content flex`} data-testid="home">
         <section id="contact" className={`${styles.content} flex`}>
           <div className={`${styles.contactSubmission} glass`}>
-            <h1 className="flicker">Get In Touch</h1>
+            <h1 className={animate ? "flicker" : ""}>Get In Touch</h1>
             <form
               action="https://formspree.io/f/mwkzplvb"
               name="contact-form"
@@ -62,7 +73,11 @@ export default function Contact() {
               className={`${styles.contactForm} flex`}
               method="post"
             >
-              <div className={`${styles.formInput} flex appear`}>
+              <div
+                className={`${styles.formInput} flex ${
+                  animate ? "appear" : ""
+                }`}
+              >
                 <label htmlFor="name">
                   <input
                     type="text"
@@ -72,7 +87,13 @@ export default function Contact() {
                     value={nameVal}
                     onChange={(e) => {
                       setNameVal(e.target.value);
-                      setName(true);
+                    }}
+                    onBlur={() => {
+                      if (nameVal.length === 0) {
+                        setName(false);
+                      } else {
+                        setName(true);
+                      }
                     }}
                   />
                 </label>
@@ -85,9 +106,14 @@ export default function Contact() {
                     value={emailVal}
                     onChange={(e) => {
                       setEmailVal(e.target.value);
-                      setEmail(true);
                     }}
-                    onBlur={emailStructure}
+                    onBlur={() => {
+                      if (emailVal.length === 0) {
+                        setEmail(false);
+                      } else {
+                        emailStructure();
+                      }
+                    }}
                   />
                 </label>
               </div>
@@ -96,12 +122,18 @@ export default function Contact() {
                   type="text"
                   name="message"
                   id="message"
-                  className="appearText"
+                  className={animate ? "appearText" : ""}
                   placeholder="Message"
                   value={msgVal}
                   onChange={(e) => {
                     setMsgVal(e.target.value);
-                    setMsg(true);
+                  }}
+                  onBlur={() => {
+                    if (msgVal.length === 0) {
+                      setMsg(false);
+                    } else {
+                      setMsg(true);
+                    }
                   }}
                 ></textarea>
               </label>
@@ -117,7 +149,11 @@ export default function Contact() {
                     : "Please insert a valid email address"}
                 </p>
               </div>
-              <div className={`${styles.formSubmission} flex slide-in-yon`}>
+              <div
+                className={`${styles.formSubmission} flex ${
+                  animate ? "slide-in-yon" : ""
+                }`}
+              >
                 <button
                   type="submit"
                   id="submit"

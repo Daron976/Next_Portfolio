@@ -132,6 +132,8 @@
   }
 }
 
+/* breakpoints */
+
 @media screen and (max-width: 1024px) {
   .projectContent {
     flex-direction: column-reverse;
@@ -144,7 +146,6 @@
 
   .header {
     border-right: none;
-    /* filter: drop-shadow(2px 4px 6px #1c6ead); */
     padding: 0;
   }
 }

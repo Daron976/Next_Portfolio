@@ -1,12 +1,21 @@
 "use client";
 import styles from "./about.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function About() {
   const [aboutMe, setAboutMe] = useState(true);
   const [exp, setExp] = useState(false);
   const [skill, setSkill] = useState(false);
+  const [animate, setAnimate] = useState(true);
+
+  useEffect(() => {
+    if (!sessionStorage.getItem("aboutOpen")) {
+      sessionStorage.setItem("aboutOpen", true);
+    } else {
+      setAnimate(false);
+    }
+  }, []);
 
   return (
     <>
@@ -16,7 +25,7 @@ export default function About() {
           className={`${styles.content} flex`}
           data-testid="about"
         >
-          <ul className={`${styles.header} flicker flex`}>
+          <ul className={`${styles.header} ${animate ? "flicker" : ""} flex`}>
             <li
               className={
                 aboutMe ? `${styles.underline} rightLine` : styles.aboutNavItems
@@ -67,7 +76,9 @@ export default function About() {
                 : `${styles.tabContent}`
             }
           >
-            <h1 className={`${styles.tabHeader} flicker`}>Who am I</h1>
+            <h1 className={`${styles.tabHeader} ${animate ? "flicker" : ""}`}>
+              Who am I
+            </h1>
             <p className={`${styles.textContent} glass slide-in`}>
               Hello there,
               <br />
@@ -94,7 +105,9 @@ export default function About() {
               exp ? `${styles.contentContainer} flex` : `${styles.tabContent}`
             }
           >
-            <h1 className={`${styles.tabHeader} flicker`}>Experience</h1>
+            <h1 className={`${styles.tabHeader} ${animate ? "flicker" : ""}`}>
+              Experience
+            </h1>
             <div className={styles.experienceItems}>
               <article className={`${styles.list} glass flex slide-in`}>
                 <h3>
@@ -144,7 +157,9 @@ export default function About() {
               skill ? `${styles.contentContainer} flex` : `${styles.tabContent}`
             }
           >
-            <h1 className={`${styles.tabHeader} flicker`}>Skills</h1>
+            <h1 className={`${styles.tabHeader} ${animate ? "flicker" : ""}`}>
+              Skills
+            </h1>
             <ul className={`${styles.list} ${styles.skillsUl} flex`}>
               <li className={`${styles.skillListItem} glass slide-in`}>
                 <h3 className="skill-header">Tech-Stack</h3>

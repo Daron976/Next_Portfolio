@@ -26,7 +26,7 @@
   margin-top: 3rem;
 }
 
-/* tablet (786px)*/
+/* breakpoints */
 
 @media screen and (max-width: 768px) {
   .homeHeader {
@@ -46,8 +46,6 @@
     margin-top: 2.5rem;
   }
 }
-
-/* mobile */
 
 @media screen and (max-width: 576px) {
   .name {

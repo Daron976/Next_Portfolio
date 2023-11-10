@@ -29,6 +29,7 @@ import mathmagician from "../../../public/content_images/mathmagician.png";
 
 export default function Portfolio() {
   const [display, setDisplay] = useState(false);
+  const [animate, setAnimate] = useState(true);
 
   const cardDisplay = (e) => {
     let curProject = e.target.value;
@@ -42,26 +43,29 @@ export default function Portfolio() {
     });
   };
 
-  const imageLoader = ({ src }) => {
-    return `https://raw.githubusercontent.com/${src}?q=${100}`;
-  };
-
   useEffect(() => {
     setDisplay(false);
+    if (!sessionStorage.getItem("portOpen")) {
+      sessionStorage.setItem("portOpen", true);
+    } else {
+      setAnimate(false);
+    }
   }, [display]);
 
   return (
     <>
       <main className={`${styles.projectContent} flex`} data-testid="home">
-        <h1 className={`${styles.contentHeader} flicker`}>Some of my work</h1>
-        <ul className={`${styles.proHeaders} flicker`}>
+        <h1 className={`${styles.contentHeader} ${animate ? "flicker" : ""}`}>
+          Some of my work
+        </h1>
+        <ul className={`${styles.proHeaders} ${animate ? "flicker" : ""}`}>
           {projectData.map((project, idx) => {
             return (
               <li
                 key={idx}
-                className={
-                  project.display ? `${styles.header} rightLine` : styles.header
-                }
+                className={`${styles.header} ${
+                  project.display ? "rightline" : ""
+                }`}
                 value={project.value}
                 onClick={cardDisplay}
               >
@@ -75,11 +79,9 @@ export default function Portfolio() {
             return (
               <article
                 key={idx}
-                className={
-                  project.display
-                    ? `${styles.projectArticle} flex glass slide-in`
-                    : `${styles.projectArticle} ${styles.tabState} glass`
-                }
+                className={`${styles.projectArticle} ${
+                  project.display ? "flex slide-in" : styles.tabState
+                }  glass `}
                 value={project.value}
               >
                 <div className={styles.projectImageContainer}>
@@ -89,12 +91,7 @@ export default function Portfolio() {
                     alt="project image"
                   />
                 </div>
-                <div
-                  className={
-                    // animation
-                    `${styles.projectDetails} flex`
-                  }
-                >
+                <div className={`${styles.projectDetails} flex`}>
                   <h1>{project.title}</h1>
                   <p>{project.description}</p>
                   <ul className={`${styles.technologies} flex`}>

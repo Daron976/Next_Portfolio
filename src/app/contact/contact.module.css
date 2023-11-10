@@ -84,7 +84,7 @@
   border: 1px solid rgb(255 255 255 / 0%);
 }
 
-/* tablet */
+/* breakpoints */
 
 @media screen and (max-width: 768px) {
   .content h1 {
