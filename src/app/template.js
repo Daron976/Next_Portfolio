@@ -66,7 +66,7 @@ export default function Template({ children }) {
     {
       id: 6,
       pos: "footer",
-      link: "https://angel.co/u/daronkwiafe",
+      link: "https://wellfound.com/u/daronkwiafe",
       icon: <SiWellfound />,
     },
     {
