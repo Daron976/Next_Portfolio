@@ -57,10 +57,10 @@ export default function Footer() {
           <div className="footer-text">
             <p>
               <span className="email">daronkwiafe@gmail.com</span>
-              <span className="separator firstSep">|</span>
+              <span className="separator firstSep"> | </span>
               <span className="phone">+27 65 747 8746</span>
-              <span className="separator secSep">|</span>
-              <span className="location">Sandton, South Africa</span>
+              <span className="separator secSep"> | </span>
+              <span className="location">Sandton, South Africa </span>
             </p>
             <p>©2023 Daron Wiafe. All rights reserved.</p>
           </div>
