@@ -26,7 +26,7 @@ export const projectData = [
   {
     title: "QuickMaths",
     description:
-      "This is a Full stack web application with a Ruby on Rails back-end and a React front-end. This application allows users to make reservations to schedule appointments with Math tutors.",
+      "This is a Full-stack web application with a Ruby on Rails back-end and a React front-end. This application allows users to make reservations to schedule appointments with Math tutors.",
     card: "awesomeTutors",
     imgURL:
       "https://raw.githubusercontent.com/Daron976/portfolio/main/images/awesomeTutors.png",
@@ -134,7 +134,7 @@ export const projectData = [
   {
     title: "Currex",
     description:
-      "This is a currency exchange app that allows users to convert the currency of any country to the another currency while providing data about the country in question.",
+      "This is a currency exchange app that allows users to convert the currency of any country to another currency while providing data about the country in question.",
     card: "currex",
     imgURL:
       "https://raw.githubusercontent.com/Daron976/portfolio/main/images/currex.png",
@@ -172,7 +172,7 @@ export const projectData = [
   {
     title: "BookShelf",
     description:
-      "In this project, I use react to create a single-page app for a Bookshelf that enables users to add or remove books with extra data stored in an external API",
+      "In this project, I use React to create a single-page app for a Bookshelf that enables users to add or remove books with extra data stored in an external API",
     card: "bookShelf",
     imgURL:
       "https://raw.githubusercontent.com/Daron976/portfolio/main/images/bookshelf.png",
@@ -205,7 +205,7 @@ export const projectData = [
   {
     title: "Math Magician",
     description:
-      "In this project, I use react to create a single-page app that contains a working calculator with a random quote.",
+      "In this project, I used React to create a single-page app that contains a working calculator with a random quote.",
     card: "mathagician",
     imgURL:
       "https://raw.githubusercontent.com/Daron976/portfolio/main/images/mathmagician.png",
@@ -238,7 +238,7 @@ export const projectData = [
   {
     title: "Climate Change Conference",
     description:
-      "This is a website for a climate change conference which contains details about the purpose, audience and speakers that will be present, as well as how the programme will unfold during the time of the conference.",
+      "This is a website for a climate change conference which contains details about the purpose, audience, and speakers that will be present, as well as how the program will unfold during the time of the conference.",
     card: "climateChange",
     imgURL:
       "https://raw.githubusercontent.com/Daron976/portfolio/main/images/climateChange.png",
