@@ -62,7 +62,7 @@ export default function Footer() {
               <span className="separator secSep"> | </span>
               <span className="location">Sandton, South Africa </span>
             </p>
-            <p>©2023 Daron Wiafe. All rights reserved.</p>
+            <p>&copy; 2023 Daron Wiafe. All rights reserved.</p>
           </div>
         </div>
       </footer>
