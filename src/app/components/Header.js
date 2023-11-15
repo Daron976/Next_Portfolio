@@ -2,29 +2,28 @@ import { HiOutlineHome } from "react-icons/hi";
 import { SiAboutdotme } from "react-icons/si";
 import { MdOutlineCases } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
-import { v4 } from "uuid";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../../public/logo_images/logo.png";
 
 const iconItems = [
   {
-    id: v4(),
+    id: 1,
     link: "/",
     icon: <HiOutlineHome />,
   },
   {
-    id: v4(),
+    id: 2,
     link: "/about",
     icon: <SiAboutdotme />,
   },
   {
-    id: v4(),
+    id: 3,
     link: "/portfolio",
     icon: <MdOutlineCases />,
   },
   {
-    id: v4(),
+    id: 4,
     link: "/contact",
     icon: <RiContactsFill />,
   },

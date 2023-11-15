@@ -4,38 +4,37 @@ import { SiWellfound } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
-import { v4 } from "uuid";
 import Link from "next/link";
 
 export default function Footer() {
   const iconItems = [
     {
-      id: v4(),
+      id: 1,
       link: "https://www.linkedin.com/in/daronkwiafe/",
       icon: <FaLinkedinIn />,
     },
     {
-      id: v4(),
+      id: 2,
       link: "https://github.com/Daron976",
       icon: <FaGithub />,
     },
     {
-      id: v4(),
+      id: 3,
       link: "https://wellfound.com/u/daronkwiafe",
       icon: <SiWellfound />,
     },
     {
-      id: v4(),
+      id: 4,
       link: "https://www.facebook.com/daron.wiafe",
       icon: <BsMeta />,
     },
     {
-      id: v4(),
+      id: 5,
       link: "https://twitter.com/WiafeDaron",
       icon: <FaXTwitter />,
     },
     {
-      id: v4(),
+      id: 6,
       link: "https://www.instagram.com/sagineer976/",
       icon: <BsInstagram />,
     },
