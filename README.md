@@ -1,7 +1,7 @@
 
 <!-- TABLE OF CONTENTS -->
 
-# 📗 Table of Contents
+<!-- # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
@@ -21,7 +21,7 @@
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ](#faq)
-- [📝 License](#license)
+- [📝 License](#license) -->
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -50,25 +50,25 @@ This is a personal portfolio website built with react
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
+<!-- ### Key Features <a name="key-features"></a>
 
 - **Displays built projects**
-- **Provides contack information for prospective clients**
+- **Provides contack information for prospective clients** -->
 <!-- - **Responsive Application** -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link]()
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
+<!-- ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
@@ -78,7 +78,7 @@ In order to run this project you need:
 - Html & CSS basics
 - JS basics
 - Broad Understanding of React
-- Git & github
+- Git & github -->
 
 
 <!--
@@ -89,64 +89,34 @@ Example command:
 ```
  -->
 
-### Setup
+<!-- ### Setup
 
 Clone this repository to your desired folder:
 - Click on the green button on the top right corner with the text code
 - Click on SSH
 - Copy the text that appears below 
-- Type "git clone" in your terminal and past the copied text next to "git clone" and press enter
-<!--
-Example commands:
+- Type "git clone" in your terminal and past the copied text next to "git clone" and press enter -->
 
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
-### Install
+<!-- ### Install
 
 Install this project with:
 - Click on the green button on the top right corner with the text code
 - Click on "Download ZIP"
 - Extract the downloaded file locally
-- Once oponed up in a code editor run `npm install` to install all packages
+- Once oponed up in a code editor run `npm install` to install all packages -->
 
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Run tests
+<!-- ### Run tests
 
 To run tests, run the following command:
-- Run `npm test` in an intergrated terminal to run automated tests.
-<!--
-Example command:
+- Run `npm test` in an intergrated terminal to run automated tests. -->
 
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
 
-### Deployment
+<!-- ### Deployment
 
 You can deploy this project using:
 - Run `npm run dev` in an intergrated terminal in order to start a local live server.
-<!--
-Example:
 
-```sh
-
-```
- -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- AUTHORS -->
 
@@ -162,23 +132,23 @@ Example:
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing <a name="contributing"></a>
+<!-- ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Daron976/currency-ex/issues). 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support <a name="support"></a>
+<!-- ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project...
 
 Feel free to give it a start
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- ACKNOWLEDGEMENTS -->
 <!-- 
